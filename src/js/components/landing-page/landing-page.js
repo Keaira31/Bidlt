@@ -1,6 +1,8 @@
 var React = require('react');
 var LandingHeader = require('./landing-header.js');
 var Splash = require('./splash.js');
+var InterfaceButtons = require('./interface-buttons.js');
+
 
 var LandingPage = React.createClass({
   render: function(){
@@ -8,6 +10,7 @@ var LandingPage = React.createClass({
       <div className="col s12 l12 landing-page">
         <LandingHeader />
         <Splash />
+        <InterfaceButtons />
       </div>
     );
   }

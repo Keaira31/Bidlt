@@ -1,5 +1,4 @@
 var React = require('react');
-var InterfaceIcon = require('./interface-icon.js');
 
 var Splash = React.createClass({
   render: function(){
