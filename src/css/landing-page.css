@@ -1,8 +1,31 @@
 body {
+    /*background-color: #d7ccc8;*/
+}
 
+.primary-color {
+  background-color: #795548;
 }
 
 .splash {
-  background-color: #d7ccc8;
-  height: 200px
+  background: url('https://images.unsplash.com/photo-1429963357583-999c3121a8ce?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925');
+  background-repeat:no-repeat;
+  background-size: cover;
+  margin:auto;
+  height:500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-title {
+  font-size: 7.56rem;
+  line-height: 110%;
+  margin: 1.78rem 0 1.424rem 0;
+  background-color: rgba(93, 64, 55, 0.61);
+  color: white;
+  padding: 0.25em;
+}
+nav .brand-logo {
+    font-size: 3.1rem;
 }
