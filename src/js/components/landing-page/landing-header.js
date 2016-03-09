@@ -3,6 +3,15 @@ var React = require('react');
 var LandingHeader = React.createClass({
   componentDidMount(){
     $(".button-collapse").sideNav();
+
+    $(document).ready(function(){
+      $('.modal-trigger').leanModal();
+    });
+
+    $(document).ready(function(){
+      $('ul.tabs').tabs();
+    });
+
   },
 
   render: function(){
@@ -15,7 +24,7 @@ var LandingHeader = React.createClass({
             <ul className="right hide-on-med-and-down">
               <li><a href="#">ABOUT US</a></li>
               <li><a href="#">CONTACT US</a></li>
-              <li><a href="#">SIGN IN</a></li>
+              <li><a className="modal-trigger" href="#modal1">SIGN IN</a></li>
             </ul>
 
             <ul className="side-nav" id="mobile-demo">
@@ -26,6 +35,30 @@ var LandingHeader = React.createClass({
 
           </div>
         </nav>
+
+        <div className="modal" id="modal1">
+          <div className="modal-content">
+
+            <h4 className="center">Sign In</h4>
+            <div className="row">
+              <div className="input-field col s12">
+                <input id="email" type="email" />
+                <label >Email</label>
+              </div>
+            </div>
+            <div className="row">
+              <div className="input-field col s12">
+                <input id="password" type="password" />
+                <label >Password</label>
+              </div>
+            </div>
+
+            <div className="modal-footer">
+                <a className="modal-action modal-close btn">Sign In</a>
+            </div>
+
+          </div>
+        </div>
 
       </div>
     );
