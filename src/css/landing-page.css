@@ -6,6 +6,10 @@ body {
   background-color: #795548;
 }
 
+.light-primary-color {
+  background-color: #d7ccc8;
+}
+
 .splash {
   background: url('https://images.unsplash.com/photo-1429963357583-999c3121a8ce?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925');
   background-repeat:no-repeat;
@@ -38,6 +42,29 @@ nav .brand-logo {
 .button-container {
   text-align: center;
   margin: 2em;
+}
+
+/*About US*/
+
+.about-us {
+  margin: 0;
+}
+
+.about-image-box {
+  height: 300px;
+  width: 400px;
+}
+
+/*Footer*/
+footer.page-footer {
+  padding: 0;
+  margin: 0;
+  background-color: #5d4037;
+  color: #ffffff;
+}
+
+footer.page-footer a{
+  color: #ffffff;
 }
 
 /*BUTTONS */
