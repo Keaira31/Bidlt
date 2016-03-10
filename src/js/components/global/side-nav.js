@@ -14,17 +14,17 @@ var SideNav = React.createClass({
   render: function(){
     var navArray = this.props.navArray;
     var NavItems = navArray.map(function(elem) {
-      return (<li key={elem.name}><Link to={elem.url}>{elem.name}</Link></li>);
+      console.log(elem.icon);
+      return (<li key={elem.name}><Link to={elem.url}>{elem.name}<i className="material-icons small right">{elem.icon}</i></Link></li>);
     });
+
+    console.log(NavItems);
 
     return (
       <div className="">
-        <nav>
-          <ul id="slide-out" className="side-nav fixed">
+        <nav className="primary-color">
+          <ul id="slide-out" className="side-nav fixed mobile-slideout">
             <li className="logo center"><Link to='/' className="logo-our">BIDLT</Link></li>
-            {NavItems}
-          </ul>
-          <ul id="slide-out" className="side-nav mobile-slideout">
             {NavItems}
           </ul>
           <a href="#" data-activates="slide-out" className="button-collapse"><i className="mdi-navigation-menu"></i></a>
