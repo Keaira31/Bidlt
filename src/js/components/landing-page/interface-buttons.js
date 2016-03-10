@@ -8,9 +8,9 @@ var InterfaceButtons = React.createClass({
         <div className="col s12 l12">
 
           <div className="col s12 l12 button-container">
-            <InterfaceButton title={"CUSTOMER"} />
-            <InterfaceButton title={"BUILDER"} />
-            <InterfaceButton title={"SBSP"} />
+            <InterfaceButton url={'/CustomerOverview'} title={"CUSTOMER"} />
+            <InterfaceButton url={'/BuilderOverview'} title={"BUILDER"} />
+            <InterfaceButton url={'/SbspOverview'} title={"SBSP"} />
           </div>
 
           <div className="col s12 l12 button-container">
