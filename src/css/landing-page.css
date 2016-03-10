@@ -2,13 +2,16 @@ body {
     /*background-color: #d7ccc8;*/
 }
 
-.primary-color {
-  background-color: #77919d;
+.main-padding {
+  padding-left: 240px;
 }
 
-.light-primary-color {
-  background-color: #9D8C77;
+@media only screen and (max-width: 992px){
+  .main-padding {
+    padding-left: 0;
+  }
 }
+
 
 .splash {
   background: url('https://images.unsplash.com/photo-1429963357583-999c3121a8ce?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925');
