@@ -51,11 +51,14 @@ nav .brand-logo {
 
 .about-us {
   margin: 0;
+  width:80%;
+  margin: auto;
 }
 
-.about-image-box {
-  height: 300px;
-  width: 400px;
+.about-us-text{
+  color:#C8DFE9;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 /*Footer*/
