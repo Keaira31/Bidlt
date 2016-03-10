@@ -24,7 +24,7 @@ var SideNav = React.createClass({
       <div className="">
         <nav className="primary-color">
           <ul id="slide-out" className="side-nav fixed mobile-slideout">
-            <li className="logo center"><Link to='/' className="logo-our">BIDLT</Link></li>
+            <li className="logo center"><Link to='/' className="logo-our">{this.props.interface}</Link></li>
             {NavItems}
           </ul>
           <a href="#" data-activates="slide-out" className="button-collapse"><i className="mdi-navigation-menu"></i></a>
