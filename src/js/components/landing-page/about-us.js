@@ -3,15 +3,19 @@ var React = require('react');
 var AboutUs = React.createClass({
   render: function(){
     return (
-      <div className="row about-us light-primary-color">
-        <div className='col s12 l12 center'>
-          <h2>ABOUT US</h2>
-        </div>
-        <div className='col s12 l6 left'>
-          <img className='responsive-img' src="http://www.texturepalace.com/gallery/concrete/120913/concrete-texture-20.jpg"/>
-        </div>
-        <div className='col s12 l6 right'>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div className="about-us-container darkest-colour">
+        <div className="row about-us darkest-colour">
+          <div className='col s12 l12 center'>
+            <h2 className="header about-us-header">Welcome to BIDLT</h2>
+          </div>
+
+          <div className='col s12 l12 right about-us-text'>
+            <p> The website application of complete construction integration across all of construction and service sectors.
+              BIDLT was created out of frustration, that construction and services had a lack of transparency, fairness and information. As a team we have spent time building new houses, renovating, room altering, office fitting and so on.<br></br><br></br>
+               What we wanted was a platform that would be the one stop shop for our building requirements and needs. But as well as a back office instantly available without having to worry about loose papers being lost.<br></br><br></br>
+                It’s those frustrations that BIDLT was created out of and BIDLT will always fight against those frustrations, and will always innovate for you.<br></br><br></br>
+            </p>
+          </div>
         </div>
       </div>
     );
