@@ -14,7 +14,7 @@ var BuilderOverview = React.createClass({
 
     return (
       <div className="">
-        <SideNav navArray={navArr} />
+        <SideNav navArray={navArr} interface={'BILDT: Builder'}/>
         <Header name={"Sohil's Company"} date={newDate} address={'14 Palmers Road, Mile End, London'}/>
       </div>
     );
