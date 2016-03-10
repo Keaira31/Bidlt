@@ -15,7 +15,7 @@ var SideNav = React.createClass({
     var navArray = this.props.navArray;
     var NavItems = navArray.map(function(elem) {
       console.log(elem.icon);
-      return (<li key={elem.name}><Link to={elem.url}>{elem.name}<i className="material-icons small right">{elem.icon}</i></Link></li>);
+      return (<li key={elem.name}><Link to={elem.url}>{elem.name}<i className=" hide-on-med-and-down material-icons small right">{elem.icon}</i></Link></li>);
     });
 
     console.log(NavItems);
