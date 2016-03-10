@@ -3,11 +3,11 @@ body {
 }
 
 .primary-color {
-  background-color: #795548;
+  background-color: #77919d;
 }
 
 .light-primary-color {
-  background-color: #d7ccc8;
+  background-color: #9D8C77;
 }
 
 .splash {
@@ -26,7 +26,7 @@ body {
   font-size: 7.56rem;
   line-height: 110%;
   margin: 1.78rem 0 1.424rem 0;
-  background-color: rgba(93, 64, 55, 0.61);
+  background-color: rgba(119, 145, 157, 0.59);
   color: white;
   padding: 0.25em;
 }
@@ -59,7 +59,7 @@ nav .brand-logo {
 footer.page-footer {
   padding: 0;
   margin: 0;
-  background-color: #5d4037;
+  background-color: #77919d;
   color: #ffffff;
 }
 
@@ -70,7 +70,7 @@ footer.page-footer a{
 /*BUTTONS */
 
 .waves-effect.hover-color:hover{
-  background-color: #5d4037;
+  background-color: #586b73;
 }
 .interface-button{
   width: 180px;

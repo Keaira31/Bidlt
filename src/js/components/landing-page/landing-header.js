@@ -30,7 +30,7 @@ var LandingHeader = React.createClass({
             <ul className="side-nav" id="mobile-demo">
               <li><a href="#">ABOUT US</a></li>
               <li><a href="#">CONTACT US</a></li>
-              <li><a href="#">SIGN IN</a></li>
+              <li><a className="modal-trigger" href="#modal1">SIGN IN</a></li>
             </ul>
 
           </div>
@@ -54,7 +54,7 @@ var LandingHeader = React.createClass({
             </div>
 
             <div className="modal-footer">
-                <a className="modal-action modal-close btn">Sign In</a>
+                <a className="modal-action modal-close btn center primary-color waves-effect hover-color waves-light">Sign In</a>
             </div>
 
           </div>
