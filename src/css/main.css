@@ -25,3 +25,12 @@
 .link-tag {
   color: black !important;
 }
+
+.rbc-toolbar {
+    display: none !important;
+}
+
+.component-title-box{
+  color: #354857;
+  background-color: #C8DFE9;
+}
