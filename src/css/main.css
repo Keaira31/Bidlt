@@ -1,15 +1,27 @@
-.darkest-colour {
-  background-color: #354857;
+.darkest-color {
+  background-color: #354857 !important;
 }
 
 .primary-color {
-  background-color: #77919d;
+  background-color: #77919d !important;
+}
+
+.secondary-color {
+  background-color: #C8DFE9 !important;
 }
 
 .light-primary-color {
-  background-color: #9D8C77;
+  background-color: #9D8C77 !important;
 }
 
 .header {
   color: #ffffff;
+}
+
+.margin-30 {
+  margin: 0 30px;
+}
+
+.link-tag {
+  color: black !important;
 }
