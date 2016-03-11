@@ -5,7 +5,7 @@ var OverviewCurrentJobs = React.createClass({
   render: function(){
     return (
       <div className="row main-padding center-align ">
-        <h5><Link className='link-tag' to='/currentJobs'>Current Jobs</Link></h5>
+        <h5>Current Jobs</h5>
           <ul className="collection left-align margin-30 ">
             <li className="light-primary-color collection-item bold current-jobs">Current jobs you are working on</li>
             <li className="collection-item">Fix the Door for Mrs. Bowes</li>
