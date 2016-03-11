@@ -3,7 +3,9 @@ var SideNav = require('../global/side-nav.js');
 var Header = require('../global/header.js');
 var OverviewCurrentJobs = require('./overview-current-jobs.js');
 var OverviewGoogleMap = require('./overview-google-map.js');
+var Agenda = require('../global/agenda.js');
 
+var Footer = require('../landing-page/landing-footer.js');
 
 
 var BuilderOverview = React.createClass({
@@ -18,6 +20,9 @@ var BuilderOverview = React.createClass({
         <Header name={"Sohil's Company"} address={'14 Palmers Road, Mile End, London'}/>
         <OverviewCurrentJobs />
         <OverviewGoogleMap />
+        <Agenda />
+        <Footer />
+
       </div>
     );
   }
