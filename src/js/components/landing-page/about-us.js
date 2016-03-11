@@ -3,8 +3,8 @@ var React = require('react');
 var AboutUs = React.createClass({
   render: function(){
     return (
-      <div className="about-us-container darkest-colour">
-        <div className="row about-us darkest-colour">
+      <div className="about-us-container darkest-color">
+        <div className="row about-us darkest-color">
           <div className='col s12 l12 center'>
             <h2 className="header about-us-header">Welcome to BIDLT</h2>
           </div>
