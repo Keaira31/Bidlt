@@ -27,7 +27,7 @@ ReactDOM.render(
   <Router history={hashHistory}>
     <Route path='/' component={App} />
     <Route path='/BuilderTemplate' component={BuilderTemplate}>
-      <IndexRoute path='BuilderOverview' component={BuilderOverview}/>
+      <IndexRoute component={BuilderOverview}/>
       <Route path='CurrentJobs' component={BuilderCurrentJobs}/>
       <Route path='AvailableJobs' component={AvailableJobs}/>
     </Route>
