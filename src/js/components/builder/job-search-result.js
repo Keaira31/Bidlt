@@ -12,6 +12,7 @@ var JobSearchResult = React.createClass({
             <br></br>
             Second Line
             </p>
+            <button className=" primary-color btn waves-effect waves-light" type="submit" name="action">Tender for Job</button>
             <p className="primary-text-color secondary-content">distance</p>
           </li>
 
@@ -22,6 +23,7 @@ var JobSearchResult = React.createClass({
             <br></br>
             Second Line
             </p>
+            <button className=" primary-color btn waves-effect waves-light" type="submit" name="action">Tender for Job</button>
             <p className="primary-text-color secondary-content">distance</p>
           </li>
 
@@ -32,6 +34,7 @@ var JobSearchResult = React.createClass({
             <br></br>
             Second Line
             </p>
+            <button className=" primary-color btn waves-effect waves-light" type="submit" name="action">Tender for Job</button>
             <p className="primary-text-color secondary-content">distance</p>
           </li>
         </ul>
