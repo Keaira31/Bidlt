@@ -7,6 +7,23 @@ require('react-big-calendar/lib/css/react-big-calendar.css');
 BigCalendar.momentLocalizer(moment);
 
 var CalendarMonthView = React.createClass({
+  componentDidMount(){
+
+    $(document).ready(function(){
+      $('.modal-trigger').leanModal();
+    });
+  },
+
+
+  modalView: function(jobObject) {
+    console.log(jobObject.start.getTime());
+
+    $('#job-detail').openModal();
+    $('.calendar-job-title').html(jobObject.title)
+    $('.calendar-job-date-time').html('Start:' + ' ' + 'End:')
+    $('.calendar-job-description').html(jobObject.desc)
+  },
+
   render: function(){
 
     return (
@@ -20,9 +37,28 @@ var CalendarMonthView = React.createClass({
           views={['month', 'week']}
           defaultView='month'
           defaultDate={new Date(2015, 3, 1)}
+          onSelectEvent={event => this.modalView(event)}
           style={{height: 900}}
         />
+
+      <div className="modal" id="job-detail">
+          <div className="modal-content">
+            <h4 className="calendar-job-title center"></h4>
+            <div className="calendar-job-content-box">
+              <div className="chip calendar-job-date-time"></div>
+              <p className="calendar-job-description"></p>
+            </div>
+
+
+            <div className="modal-footer">
+                <a className="modal-action modal-close btn-flat center waves-effect hover-color waves-light">Close</a>
+            </div>
+
+          </div>
+        </div>
+
       </div>
+
     );
   }
 });
