@@ -10,3 +10,7 @@ span.thumb.active {
 input[type=range]::-webkit-slider-thumb {
   background: #354857 !important;
 }
+
+span.caret {
+  color: #354857 !important;
+}

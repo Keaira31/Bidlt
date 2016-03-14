@@ -14,17 +14,6 @@
   background-color: #9D8C77 !important;
 }
 
-.dropdown-content li> span{
-  color: #354857;
-}
-
-span.thumb.active {
-  background-color: #354857 !important;
-}
-
-input[type=range]::-webkit-slider-thumb {
-  background: #354857 !important;
-}
 
 .primary-text-color {
   color: #77919d !important;
