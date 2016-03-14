@@ -18,6 +18,14 @@
   color: #354857;
 }
 
+span.thumb.active {
+  background-color: #354857 !important;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  background: #354857 !important;
+}
+
 .primary-text-color {
   color: #77919d !important;
 }
