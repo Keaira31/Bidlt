@@ -10,17 +10,17 @@ var CalendarMonthView = React.createClass({
   render: function(){
 
     return (
-      <div className=" main-padding margin-30 center-align">
+      <div className=" calendar-large-view main-padding margin-30 center-align">
         <div className="component-title-box">
           <h5>Month View</h5>
         </div>
         <BigCalendar
           selectable
           events={events}
-          views={['month']}
+          views={['month', 'week']}
           defaultView='month'
           defaultDate={new Date(2015, 3, 1)}
-          style={{height: 650}}
+          style={{height: 900}}
         />
       </div>
     );
