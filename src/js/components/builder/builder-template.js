@@ -1,7 +1,7 @@
 var React = require('react');
 var SideNav = require('../global/side-nav.js');
 var Header = require('../global/header.js');
-var Footer = require('../landing-page/landing-footer.js');
+var Footer = require('../global/footer.js');
 
 
 var BuilderTemplate = React.createClass({
