@@ -14,6 +14,22 @@
   background-color: #9D8C77 !important;
 }
 
+.dropdown-content li> span{
+  color: #354857;
+}
+
+.primary-text-color {
+  color: #77919d !important;
+}
+
+.secondary-text-color {
+  color: #C8DFE9 !important;
+}
+
+.white-text-color {
+  color: #ffffff !important;
+}
+
 .header {
   color: #ffffff;
 }

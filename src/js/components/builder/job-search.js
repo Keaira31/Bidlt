@@ -15,8 +15,8 @@ var JobSearch = React.createClass({
             <p>Trade</p>
             <select>
               <option selected value="" disabled>Select Your Trade</option>
-              <option className="primary-color" value="all">All</option>
-              <option value="electrician">Electrician</option>
+              <option value="all">All</option>
+              <option className="darkest-text-color" value="electrician">Electrician</option>
               <option value="plumber">Plumber</option>
               <option value="ground-work">Ground Work</option>
               <option value="carpenter">Carpenter</option>
