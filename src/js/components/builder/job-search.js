@@ -15,9 +15,10 @@ var JobSearch = React.createClass({
   },
 
   getJobSearchResult: function() {
-      var trade = this.state.trade
-      var jobType = this.state.jobType
-      var renderResults = this.renderResults
+      var trade = this.state.trade;
+      var jobType = this.state.jobType;
+      var proximity = this.state.proximity;
+      var renderResults = this.renderResults;
       return JobData.filter(function(elem) {
         if (trade === 'All') {
           return elem
@@ -28,6 +29,10 @@ var JobSearch = React.createClass({
         if (jobType === 'All') {
           return elem
         } else if (elem.jobType == jobType) {
+          return elem
+        }
+      }).filter(function(elem){
+        if (elem.proximity < proximity){
           return elem
         }
       }).map(renderResults)
