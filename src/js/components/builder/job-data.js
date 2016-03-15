@@ -8,7 +8,7 @@ module.exports =   [
     distance: '3 Miles',
     proximity: 3,
     jobDescription: 'I have a 3x3 foot door, can someone please build a new door with a cat flap',
-    images: ['url1', 'url2'],
+    images: ['http://www.colnbrookcommunityassociation.org.uk/wp-content/uploads/2015/09/Housebuilding.jpg', 'http://www.colnbrookcommunityassociation.org.uk/wp-content/uploads/2015/09/Housebuilding.jpg'],
     files: ['Doorphotofront.jpg', 'Doorphotoback.jpg', 'planning.pdf']
   },
   {
@@ -17,10 +17,10 @@ module.exports =   [
     trade: "Carpenter",
     jobType: 'Self Build',
     postcode: 'E1 0AD',
-    distance: '4 Miles',
+    distance: '20 Miles',
     proximity: 20,
     jobDescription: 'Mahogany Wood flooring for house build',
-    images: ['url1', 'url2'],
+    images: ['http://www.colnbrookcommunityassociation.org.uk/wp-content/uploads/2015/09/Housebuilding.jpg', 'http://www.colnbrookcommunityassociation.org.uk/wp-content/uploads/2015/09/Housebuilding.jpg'],
     files: ['Doorphotofront.jpg', 'Doorphotoback.jpg', 'planning.pdf']
   },
   {
@@ -30,9 +30,9 @@ module.exports =   [
     jobType: 'Small Project',
     postcode: 'E3 2EZ',
     distance: '10 Miles',
-    proximity: 20,
+    proximity: 10,
     jobDescription: 'Shower in loft extension needs electricity',
-    images: ['url1', 'url2'],
+    images: ['http://www.colnbrookcommunityassociation.org.uk/wp-content/uploads/2015/09/Housebuilding.jpg', 'http://www.colnbrookcommunityassociation.org.uk/wp-content/uploads/2015/09/Housebuilding.jpg'],
     files: ['Doorphotofront.jpg', 'Doorphotoback.jpg', 'planning.pdf']
   },
   {
@@ -41,10 +41,10 @@ module.exports =   [
     trade: "Plumber",
     jobType: 'Self Build',
     postcode: 'E3 5AH',
-    distance: '5 Miles',
+    distance: '7 Miles',
     proximity: 7,
     jobDescription: 'New Bathroom needs fitting',
-    images: ['url1', 'url2'],
+    images: ['http://www.colnbrookcommunityassociation.org.uk/wp-content/uploads/2015/09/Housebuilding.jpg', 'http://www.colnbrookcommunityassociation.org.uk/wp-content/uploads/2015/09/Housebuilding.jpg'],
     files: ['Doorphotofront.jpg', 'Doorphotoback.jpg', 'planning.pdf']
   },
 ];

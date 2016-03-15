@@ -17,22 +17,38 @@ var JobSearch = React.createClass({
   getJobSearchResult: function() {
       var trade = this.state.trade
       var jobType = this.state.jobType
-      var results = JobData.filter(function(elem) {
+      var renderResults = this.renderResults
+      return JobData.filter(function(elem) {
         if (trade === 'All') {
           return elem
         } else if (elem.trade == trade) {
           return elem
         }
       }).filter(function(elem){
-        console.log(elem);
         if (jobType === 'All') {
           return elem
         } else if (elem.jobType == jobType) {
           return elem
         }
-      })
+      }).map(renderResults)
 
-      console.log(results);
+  },
+
+  renderResults: function(elem){
+      return (
+              <li key={elem.id} className="collection-item avatar">
+              <img src={elem.images[0]} alt="" className="circle" />
+              <span className="title">{elem.title}</span>
+              <p>{elem.trade}
+              <br></br>
+              {elem.jobType}
+              <br></br>
+              {elem.jobDescription}
+              </p>
+              <button className=" primary-color btn waves-effect waves-light" type="submit" name="action">Tender for Job</button>
+              <p className="primary-text-color secondary-content">{elem.distance}</p>
+            </li>
+          )
   },
 
   getValue: function(event, index, value) {
@@ -99,6 +115,10 @@ var JobSearch = React.createClass({
             </button>
           </div>
         </div>
+        <p>REAL RESULTS</p>
+          <ul className="collection">
+        {this.getJobSearchResult()}
+      </ul>
       </div>
 
     );

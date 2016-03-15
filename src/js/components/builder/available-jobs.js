@@ -7,7 +7,6 @@ var AvailableJobs = React.createClass({
     return (
       <div className="builder-available-jobs">
         <JobSearch />
-        <JobSearchResult />
       </div>
     );
   }
