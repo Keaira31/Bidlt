@@ -3,6 +3,7 @@ var SelectField = require('material-ui/lib/select-field');
 var MenuItem = require('material-ui/lib/menus/menu-item');
 var Slider = require('material-ui/lib/slider');
 var JobData = require('./job-data.js');
+var Link = require('react-router').Link;
 
 var JobSearch = React.createClass({
 
@@ -40,18 +41,24 @@ var JobSearch = React.createClass({
   },
 
   renderResults: function(elem){
+    var linkValue = "BuilderTemplate/AvailableJobs/" + elem.id;
       return (
               <li key={elem.id} className="collection-item avatar">
               <img src={elem.images[0]} alt="" className="circle" />
-              <span className="title">{elem.title}</span>
-              <p>{elem.trade}
+              <span className="title job-result-title">{elem.title}</span>
+              <p className="darkest-text-color job-result-trade">{elem.trade} - {elem.jobType}
               <br></br>
-              {elem.jobType}
               <br></br>
-              {elem.jobDescription}
               </p>
-              <button className=" primary-color btn waves-effect waves-light" type="submit" name="action">Tender for Job</button>
-              <p className="primary-text-color secondary-content">{elem.distance}</p>
+              <p className="truncate">
+              {elem.jobDescription}
+                <br></br>
+
+              </p>
+              <div className="left-align">
+              <Link to={linkValue}><button className=" primary-color btn waves-effect waves-light" type="submit" name="action">Tender for Job</button></Link>
+              </div>
+              <p className=" hide-on-med-and-down primary-text-color secondary-content">{elem.distance}</p>
             </li>
           )
   },

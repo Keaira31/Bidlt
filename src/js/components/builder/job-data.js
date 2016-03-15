@@ -7,7 +7,7 @@ module.exports =   [
     postcode: 'EC2 0SY',
     distance: '3 Miles',
     proximity: 3,
-    jobDescription: 'I have a 3x3 foot door, can someone please build a new door with a cat flap',
+    jobDescription: 'I have a 3x3 foot door, can someone please build a new door with a cat flap Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
     images: ['http://www.colnbrookcommunityassociation.org.uk/wp-content/uploads/2015/09/Housebuilding.jpg', 'http://www.colnbrookcommunityassociation.org.uk/wp-content/uploads/2015/09/Housebuilding.jpg'],
     files: ['Doorphotofront.jpg', 'Doorphotoback.jpg', 'planning.pdf']
   },
