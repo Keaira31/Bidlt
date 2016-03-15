@@ -7,21 +7,22 @@ var Route = require('react-router').Route;
 var Link = require('react-router').Link;
 var IndexRoute = require('react-router').IndexRoute;
 var hashHistory = require('react-router').hashHistory;
-
-require('../css/index.js');
-
-
+var InjectTapEventPlugin = require('react-tap-event-plugin');
 var App = require('./components/app.js');
 var BuilderTemplate = require('./components/builder/builder-template.js');
 var BuilderOverview = require('./components/builder/builder-overview.js');
 var BuilderCurrentJobs = require('./components/builder/current-jobs.js');
 var AvailableJobs = require('./components/builder/available-jobs.js');
-
 var CustomerOverview = require('./components/customer/customer-overview.js');
 var SbspOverview = require('./components/sbsp/sbsp-overview.js');
 
 
+
 var rootElement = document.getElementById('react_content_container');
+
+InjectTapEventPlugin();
+
+require('../css/index.js');
 
 ReactDOM.render(
   <Router history={hashHistory}>

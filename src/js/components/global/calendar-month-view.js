@@ -16,14 +16,9 @@ var CalendarMonthView = React.createClass({
 
 
   modalView: function(jobObject) {
-    console.log(jobObject.start.getTime());
-
     var jobDate = (jobObject.start).toString().slice(0, 15);
-    console.log(jobDate);
     var startTime = (jobObject.start).toString().slice(16, 21);
-    console.log(startTime);
     var endTime = (jobObject.end).toString().slice(16, 21);
-    console.log(endTime);
 
     $('#job-detail').openModal();
     $('.calendar-job-title').html(jobObject.title);

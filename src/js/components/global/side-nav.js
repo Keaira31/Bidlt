@@ -8,17 +8,13 @@ var SideNav = React.createClass({
 
   componentDidMount () {
     $(".button-collapse").sideNav();
-    console.log('hello side navvvv');
   },
 
   render: function(){
     var navArray = this.props.navArray;
     var NavItems = navArray.map(function(elem) {
-      console.log(elem.icon);
       return (<li key={elem.name}><Link to={elem.url}>{elem.name}<i className="material-icons small right">{elem.icon}</i></Link></li>);
     });
-
-    console.log(NavItems);
 
     return (
       <div className="">

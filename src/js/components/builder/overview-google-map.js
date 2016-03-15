@@ -55,7 +55,7 @@ var OverviewGoogleMap = function (props) {
         <GoogleMapLoader
            containerElement={<div {...props} style={{height: "25em"}}/>}
            googleMapElement={
-             <GoogleMap ref={map => console.log("GoogleMap", map)}  defaultZoom={11} defaultCenter={{lat:51.529571, lng: -0.042356}}  >
+             <GoogleMap ref={map => ("GoogleMap", map)}  defaultZoom={11} defaultCenter={{lat:51.529571, lng: -0.042356}}  >
                {Markers.markers.map((marker, index) => {
                  return (
                    <Marker {...marker} />
