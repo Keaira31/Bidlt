@@ -9,8 +9,8 @@ var JobSearch = React.createClass({
 
   getInitialState: function() {
     return {
-      trade: "all",
-      jobType: "all",
+      trade: "All",
+      jobType: "All",
       proximity: 10
     };
   },
@@ -127,7 +127,7 @@ var JobSearch = React.createClass({
             </button>
           </div>
         </div>
-        <p>REAL RESULTS</p>
+        <label>Search Results</label>
           <ul className="collection">
         {this.getJobSearchResult()}
       </ul>
