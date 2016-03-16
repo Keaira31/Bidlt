@@ -56,7 +56,7 @@ var JobSearch = React.createClass({
 
               </p>
               <div className="left-align">
-              <Link to={linkValue}><button className=" primary-color btn waves-effect waves-light" type="submit" name="action">Tender for Job</button></Link>
+              <Link to={linkValue}><button className=" primary-color btn waves-effect waves-light" type="submit" name="action">View Details</button></Link>
               </div>
               <p className=" hide-on-med-and-down primary-text-color secondary-content">{elem.distance}</p>
             </li>

@@ -2,6 +2,7 @@ var React = require('react');
 var JobData = require('./job-data.js');
 var Gallery = require('react-image-gallery');
 var TenderGoogleMap = require('./tender-google-map.js');
+var TenderModal = require('./job-tender-modal.js');
 require('react-image-gallery/build/image-gallery.css');
 
 
@@ -25,7 +26,16 @@ var JobTender = React.createClass({
     this.setState({
       job: getJobData[0]
     });
+
+    $(document).ready(function(){
+      $('.modal-trigger').leanModal();
+    });
+
+
+
   },
+
+
 
   render: function(){
     console.log("this is the images", this.state.job.images);
@@ -37,13 +47,9 @@ var JobTender = React.createClass({
         </div>
 
         <div className="row">
-
-
           <div className="image-gallery-box col s12 l12">
             <Gallery items={this.state.job.images}/>
           </div>
-
-
         </div>
 
         <div className="row">
@@ -55,6 +61,19 @@ var JobTender = React.createClass({
           <div className="col s12 l6">
             <TenderGoogleMap />
           </div>
+        </div>
+
+        <div className="row">
+          <div className="col s12 l12 right-align">
+            <button className="darkest-color btn-large waves-effect waves-light modal-trigger" data-target="submit-tender">
+              Start Tender Process
+            <i className="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+
+        <div className="modal" id="submit-tender">
+          <TenderModal />
         </div>
       </div>
     );
