@@ -44,7 +44,7 @@ var JobSearch = React.createClass({
     var linkValue = "BuilderTemplate/AvailableJobs/" + elem.id;
       return (
               <li key={elem.id} className="collection-item avatar">
-              <img src={elem.images[0]} alt="" className="circle" />
+              <img src={elem.images[0].original} alt="" className="circle" />
               <span className="title job-result-title">{elem.title}</span>
               <p className="darkest-text-color job-result-trade">{elem.trade} - {elem.jobType}
               <br></br>
