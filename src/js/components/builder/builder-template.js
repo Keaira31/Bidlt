@@ -8,7 +8,7 @@ var BuilderTemplate = React.createClass({
 
   render: function(){
     var navArr = [{name:'Overview',url:'/BuilderTemplate', icon:'dashboard'}, {name:'Current Jobs',url:'/BuilderTemplate/CurrentJobs', icon:'event'}, {name:'Available Jobs',url:'/BuilderTemplate/AvailableJobs', icon: 'work'},{name:'Back Office',url:'/backOffice', icon: 'receipt'},{name:'Wall',url:'/wall', icon:'chat_bubble_outline'},{name:'Search & Hire',url:'/seachHire', icon: 'build'}, {name:'Safeguarding',url:'/safeguarding', icon: 'thumb_up'}];
-
+    console.log("rendering builder template");
 
     return (
       <div className="">

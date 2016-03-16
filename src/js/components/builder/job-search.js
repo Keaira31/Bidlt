@@ -9,8 +9,8 @@ var JobSearch = React.createClass({
 
   getInitialState: function() {
     return {
-      trade: "all",
-      jobType: "all",
+      trade: "All",
+      jobType: "All",
       proximity: 10
     };
   },
@@ -44,7 +44,7 @@ var JobSearch = React.createClass({
     var linkValue = "BuilderTemplate/AvailableJobs/" + elem.id;
       return (
               <li key={elem.id} className="collection-item avatar">
-              <img src={elem.images[0]} alt="" className="circle" />
+              <img src={elem.images[0].original} alt="" className="circle" />
               <span className="title job-result-title">{elem.title}</span>
               <p className="darkest-text-color job-result-trade">{elem.trade} - {elem.jobType}
               <br></br>
@@ -56,7 +56,7 @@ var JobSearch = React.createClass({
 
               </p>
               <div className="left-align">
-              <Link to={linkValue}><button className=" primary-color btn waves-effect waves-light" type="submit" name="action">Tender for Job</button></Link>
+              <Link to={linkValue}><button className=" primary-color btn waves-effect waves-light" type="submit" name="action">View Details</button></Link>
               </div>
               <p className=" hide-on-med-and-down primary-text-color secondary-content">{elem.distance}</p>
             </li>
@@ -127,7 +127,7 @@ var JobSearch = React.createClass({
             </button>
           </div>
         </div>
-        <p>REAL RESULTS</p>
+        <label>Search Results</label>
           <ul className="collection">
         {this.getJobSearchResult()}
       </ul>

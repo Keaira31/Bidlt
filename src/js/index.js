@@ -13,6 +13,8 @@ var BuilderTemplate = require('./components/builder/builder-template.js');
 var BuilderOverview = require('./components/builder/builder-overview.js');
 var BuilderCurrentJobs = require('./components/builder/current-jobs.js');
 var AvailableJobs = require('./components/builder/available-jobs.js');
+var JobTender = require('./components/builder/job-tender.js');
+
 var CustomerOverview = require('./components/customer/customer-overview.js');
 var SbspOverview = require('./components/sbsp/sbsp-overview.js');
 
@@ -31,6 +33,7 @@ ReactDOM.render(
       <IndexRoute component={BuilderOverview}/>
       <Route path='CurrentJobs' component={BuilderCurrentJobs}/>
       <Route path='AvailableJobs' component={AvailableJobs}/>
+      <Route path='AvailableJobs/:id' component={JobTender}/>
     </Route>
 
     <Route path='/CustomerOverview' component={CustomerOverview} />
