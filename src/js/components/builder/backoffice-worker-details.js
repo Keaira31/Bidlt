@@ -7,7 +7,8 @@ var WorkerDetails = React.createClass({
       name: '',
       number:'',
       expertise:'',
-      availabilty:''
+      availabilty:'',
+      workers: []
     };
   },
 
@@ -17,8 +18,22 @@ var WorkerDetails = React.createClass({
       this.setState(change);
   },
 
+  addWorker: function(){
+    this.setState.workers = this.state.workers.push([this.state.name, this.state.number, this.state.expertise, this.state.availabilty]);
+    console.log("this is the worker");
+    return (
+      <tr>
+        <td>{this.state.name}</td>
+        <td>Mahogany Wood flooring for house build</td>
+        <td>01/03/2016</td>
+        <td>£1000.80</td>
+      </tr>
+    );
+  },
+
   render: function(){
-    console.log(this.state);
+      
+
     return (
       <div className="">
       <div className="modal-content">
@@ -87,7 +102,7 @@ var WorkerDetails = React.createClass({
           </div>
           <div className="row">
             <div className="col s12 l12 right-align">
-              <button className=" darkest-color btn waves-effect waves-light" type="submit">Add Worker
+              <button className=" darkest-color btn waves-effect waves-light" onClick={this.addWorker}>Add Worker
               <i className="material-icons right">add</i>
               </button>
             </div>
@@ -111,6 +126,10 @@ var WorkerDetails = React.createClass({
                 <td>01/03/2016</td>
                 <td>£1000.80</td>
               </tr>
+
+              {this.props.addWorker.bind(this)}
+
+
             </tbody>
             </table>
           </div>
