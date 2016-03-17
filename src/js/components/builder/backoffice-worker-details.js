@@ -23,42 +23,96 @@ var WorkerDetails = React.createClass({
       <div className="">
       <div className="modal-content">
         <h5 className="center">Worker Details</h5>
-
-        <div className="row">
+        <br></br>
+        <div className="row z-depth-1">
             <div className="col s12 l3">
+            <label>Name</label>
+            <br></br>
               <TextField
+                style={{
+                  width: '80%'
+                }}
+                underlineFocusStyle={{display: "none"}}
+                underlineStyle={{}}
                 ref="name"
-                hintText="Name"
                 value={this.state.name}
                 onChange={this.getWorkerDetail.bind(this, 'name')}
                 />
             </div>
             <div className="col s12 l3">
+              <label>Number</label>
+              <br></br>
               <TextField
+                style={{
+                  width: '80%'
+                }}
+                underlineFocusStyle={{display: "none"}}
+                underlineStyle={{}}
                 ref="number"
-                hintText="Number"
                 value={this.state.number}
                 onChange={this.getWorkerDetail.bind(this, 'number')}
                 />
             </div>
             <div className="col s12 l3">
+              <label>Expertise</label>
+              <br></br>
               <TextField
+                style={{
+                  width: '80%'
+                }}
+                underlineFocusStyle={{display: "none"}}
+                underlineStyle={{}}
                 ref="expertise"
-                hintText="Expertise"
                 value={this.state.expertise}
                 onChange={this.getWorkerDetail.bind(this, 'expertise')}
                 />
             </div>
             <div className="col s12 l3">
+              <label>Availabilty</label>
+              <br></br>
               <TextField
+                style={{
+                  width: '80%'
+                }}
+                underlineFocusStyle={{display: "none"}}
+                underlineStyle={{}}
                 ref="availabilty"
-                hintText="Availabilty"
                 value={this.state.availabilty}
                 onChange={this.getWorkerDetail.bind(this, 'availabilty')}
                 />
+
             </div>
 
 
+          </div>
+          <div className="row">
+            <div className="col s12 l12 right-align">
+              <button className=" darkest-color btn waves-effect waves-light" type="submit">Add Worker
+              <i className="material-icons right">add</i>
+              </button>
+            </div>
+          </div>
+
+          <div className="row">
+          <table className="bordered responsive-table highlight">
+            <thead>
+              <tr>
+                  <th data-field="id">Name</th>
+                  <th data-field="name">Number</th>
+                  <th data-field="price">Expertise</th>
+                  <th data-field="price">Availabilty</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alvin</td>
+                <td>Mahogany Wood flooring for house build</td>
+                <td>01/03/2016</td>
+                <td>£1000.80</td>
+              </tr>
+            </tbody>
+            </table>
           </div>
 
 
