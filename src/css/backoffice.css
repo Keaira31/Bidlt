@@ -1,0 +1,27 @@
+.builder-backoffice-buttons{
+  min-height: 80vh;
+}
+
+.backoffice-button-individual{
+  height:200px;
+  width:200px;
+  background-color: #C8DFE9;
+  text-align: center;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.backoffice-icon-text{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #354857;
+}
+
+.backoffice-icon-text a{
+  color: #354857;
+}
+
+.backoffice-button-outer-div{
+  margin-bottom: 1.5em;
+}

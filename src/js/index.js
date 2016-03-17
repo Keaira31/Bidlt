@@ -14,6 +14,8 @@ var BuilderOverview = require('./components/builder/builder-overview.js');
 var BuilderCurrentJobs = require('./components/builder/current-jobs.js');
 var AvailableJobs = require('./components/builder/available-jobs.js');
 var JobTender = require('./components/builder/job-tender.js');
+var BackOffice = require('./components/builder/backoffice.js');
+
 
 var CustomerOverview = require('./components/customer/customer-overview.js');
 var SbspOverview = require('./components/sbsp/sbsp-overview.js');
@@ -34,6 +36,7 @@ ReactDOM.render(
       <Route path='CurrentJobs' component={BuilderCurrentJobs}/>
       <Route path='AvailableJobs' component={AvailableJobs}/>
       <Route path='AvailableJobs/:id' component={JobTender}/>
+      <Route path='BackOffice' component={BackOffice}/>
     </Route>
 
     <Route path='/CustomerOverview' component={CustomerOverview} />
