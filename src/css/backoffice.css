@@ -21,6 +21,9 @@
 .backoffice-icon-text a{
   color: #354857;
 }
+.backoffice-icon-text a:hover{
+  color: #77919d;
+}
 
 .backoffice-button-outer-div{
   margin-bottom: 1.5em;
