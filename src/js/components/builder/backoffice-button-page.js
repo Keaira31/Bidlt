@@ -30,10 +30,12 @@ var BackOfficeButtonPage = React.createClass({
           <div className="col s12 l2 backoffice-button-outer-div" >
             <div className="backoffice-button-individual  valign-wrapper" >
               <div className="valign backoffice-icon-text">
+                <a className="modal-trigger" href="#worker-details">
                  <i className="material-icons large">people</i>
                 <h5 className="">
                 Worker Details
                 </h5>
+                </a>
               </div>
             </div>
           </div>
@@ -55,20 +57,24 @@ var BackOfficeButtonPage = React.createClass({
           <div className="backoffice-button-outer-div col s12 l2 offset-l4" >
             <div className="backoffice-button-individual valign-wrapper" >
               <div className="valign backoffice-icon-text">
+                <a className="modal-trigger" href="#coming-soon">
                  <i className="material-icons large">healing</i>
                 <h5 className="">
                 H & S
                 </h5>
+                </a>
               </div>
             </div>
           </div>
           <div className=" col s12 l2" >
             <div className="backoffice-button-individual valign-wrapper" >
               <div className="valign backoffice-icon-text">
+                <a className="modal-trigger" href="#coming-soon">
                  <i className="material-icons large">done_all</i>
                 <h5 className="">
                 HR
                 </h5>
+                </a>
               </div>
             </div>
           </div>
@@ -119,6 +125,9 @@ var BackOfficeButtonPage = React.createClass({
         <div className="modal-content">
 
           <h5 className="center">Invoices</h5>
+          <div className="right-align">
+            <a className=" btn disabled">Add Invoice</a>
+          </div>
 
             <table className="bordered responsive-table highlight">
               <thead>
@@ -130,33 +139,27 @@ var BackOfficeButtonPage = React.createClass({
 
                 </tr>
               </thead>
-
               <tbody>
                 <tr>
                   <td>Alvin</td>
                   <td>Mahogany Wood flooring for house build</td>
                   <td>01/03/2016</td>
                   <td>£1000.80</td>
-
-
                 </tr>
                 <tr>
                   <td>Alan</td>
                   <td>Mahogany Wood flooring for house build</td>
                   <td>01/03/2016</td>
                   <td>£1000.80</td>
-
                 </tr>
                 <tr>
                   <td>Jonathan</td>
                   <td>Mahogany Wood flooring for house build</td>
                   <td>01/03/2016</td>
                   <td>£1000.80 </td>
-
                 </tr>
               </tbody>
           </table>
-
           <div className="modal-footer">
               <a className="modal-action modal-close btn center primary-color waves-effect hover-color waves-light">Close</a>
           </div>
@@ -164,6 +167,29 @@ var BackOfficeButtonPage = React.createClass({
         </div>
       </div>
 
+
+      <div className="modal" id="worker-details">
+        <div className="modal-content">
+
+          <h5 className="center">Coming Soon</h5>
+          <div className="modal-footer">
+              <a className="modal-action modal-close btn center primary-color waves-effect hover-color waves-light">Close</a>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div className="modal" id="coming-soon">
+        <div className="modal-content">
+
+          <h5 className="center">Coming Soon</h5>
+          <div className="modal-footer">
+              <a className="modal-action modal-close btn center primary-color waves-effect hover-color waves-light">Close</a>
+          </div>
+
+        </div>
+      </div>
 
 
     </div>
