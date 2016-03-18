@@ -7,7 +7,7 @@ var Splash = React.createClass({
 
         <div className="row">
           <div className="col l12 s12 central-icon">
-            <h2 className="splash-title">BILDT</h2>
+            <h2 className="splash-title">BIDLT</h2>
           </div>
         </div>
 
