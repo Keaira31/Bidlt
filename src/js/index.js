@@ -24,7 +24,7 @@ var Safeguarding = require('./components/builder/safeguarding.js');
 var SBSPOverview = require('./components/sbsp/sbsp-overview.js');
 var SBSPTemplate = require('./components/sbsp/sbsp-template.js');
 var SBSPSearchHire = require('./components/sbsp/search-hire.js');
-var SearchHireHire = require('./components/sbsp/search-hire-labour.js');
+var SBSPSearchHireLabour = require('./components/sbsp/search-hire-labour.js');
 
 var Compliance = require('./components/sbsp/compliance.js');
 
@@ -48,7 +48,7 @@ require('../css/index.js');
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path='/' component={App} />
-    
+
     <Route path='/BuilderTemplate' component={BuilderTemplate}>
       <IndexRoute component={BuilderOverview}/>
       <Route path='CurrentJobs' component={BuilderCurrentJobs}/>
@@ -65,7 +65,7 @@ ReactDOM.render(
       <IndexRoute component={SBSPOverview}/>
       <Route path='BackOffice' component={BackOffice}/>
       <Route path='SearchHire' component={SBSPSearchHire}/>
-      <Route path='SearchHire/Labour' component={SearchHireHire}/>
+      <Route path='SearchHire/Labour' component={SBSPSearchHireLabour}/>
       <Route path='CurrentJobs' component={BuilderCurrentJobs}/>
       <Route path='Wall' component={BuilderWall}/>
       <Route path='Compliance' component={Compliance}/>
