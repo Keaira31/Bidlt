@@ -1,15 +1,14 @@
 var React = require('react');
 var TextField = require('material-ui/lib/text-field');
 var WorkerDetails = require('./backoffice-worker-details.js');
+
+
 var BackOfficeButtonPage = React.createClass({
 
-
   componentDidMount(){
-
     $(document).ready(function(){
       $('.modal-trigger').leanModal();
     });
-
   },
 
   render: function(){
