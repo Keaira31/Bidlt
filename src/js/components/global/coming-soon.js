@@ -8,7 +8,7 @@ var ComingSoon = React.createClass({
         <div className="col s12 l12 z-depth-1">
         <h3 className="center-align">{this.props.pageName}</h3>
           <div className="center-align">
-            <i className="material-icons large darkest-text-color">this.props.icon</i>
+            <i className="material-icons large darkest-text-color">{this.props.icon}</i>
           </div>
         <h5 className="center-align">Coming Soon</h5>
         </div>

@@ -5,8 +5,7 @@ var Advice = React.createClass({
   render: function(){
     return (
       <div className="">
-        <ComingSoon pageName={"Sohil's Company"} icon={}/>
-        <h1>Inspiration</h1>
+        <ComingSoon pageName={"Advice"} icon={'people_outline'}/>
       </div>
     );
   }
