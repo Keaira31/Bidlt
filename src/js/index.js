@@ -15,6 +15,9 @@ var BuilderCurrentJobs = require('./components/builder/current-jobs.js');
 var AvailableJobs = require('./components/builder/available-jobs.js');
 var JobTender = require('./components/builder/job-tender.js');
 var BackOffice = require('./components/builder/backoffice.js');
+var SearchHire = require('./components/builder/search-hire.js');
+var SearchHireHire = require('./components/builder/search-hire-hire.js');
+
 
 
 var CustomerOverview = require('./components/customer/customer-overview.js');
@@ -37,6 +40,10 @@ ReactDOM.render(
       <Route path='AvailableJobs' component={AvailableJobs}/>
       <Route path='AvailableJobs/:id' component={JobTender}/>
       <Route path='BackOffice' component={BackOffice}/>
+      <Route path='SearchHire' component={SearchHire}/>
+      <Route path='SearchHire/Hire' component={SearchHireHire}/>
+
+
     </Route>
 
     <Route path='/CustomerOverview' component={CustomerOverview} />
