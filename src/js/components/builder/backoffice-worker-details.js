@@ -19,20 +19,26 @@ var WorkerDetails = React.createClass({
   },
 
   addWorker: function(){
-    this.setState.workers = this.state.workers.push([this.state.name, this.state.number, this.state.expertise, this.state.availabilty]);
-    console.log("this is the worker");
-    return (
-      <tr>
-        <td>{this.state.name}</td>
-        <td>Mahogany Wood flooring for house build</td>
-        <td>01/03/2016</td>
-        <td>£1000.80</td>
-      </tr>
-    );
+    this.setState({
+      name: "",
+      number: "",
+      expertise: "",
+      availabilty: "",
+      workers: this.state.workers.concat({name: this.state.name, number: this.state.number, expertise: this.state.expertise, availabilty: this.state.availabilty})
+    });
   },
 
   render: function(){
-      
+    var workers = this.state.workers.map(function(elem) {
+      return (
+        <tr key={elem.name}>
+          <td>{elem.name}</td>
+          <td>{elem.number}</td>
+          <td>{elem.expertise}</td>
+          <td>{elem.availabilty}</td>
+        </tr>
+      )
+    })
 
     return (
       <div className="">
@@ -122,12 +128,12 @@ var WorkerDetails = React.createClass({
             <tbody>
               <tr>
                 <td>Alvin</td>
-                <td>Mahogany Wood flooring for house build</td>
-                <td>01/03/2016</td>
-                <td>£1000.80</td>
+                <td>07774547123</td>
+                <td>Electrician: 10+ Years</td>
+                <td>5 days</td>
               </tr>
 
-              {this.props.addWorker.bind(this)}
+              {workers}
 
 
             </tbody>

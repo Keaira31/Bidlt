@@ -112,6 +112,7 @@ var JobSearch = React.createClass({
               <MenuItem value={'Small Project'} primaryText="Small Project"/>
               <MenuItem value={'TLC'} disabled primaryText="TLC"/>
             </SelectField>
+
           </div>
         </div>
         <label>Proximity</label>
