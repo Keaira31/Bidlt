@@ -22,7 +22,15 @@ var Safeguarding = require('./components/builder/safeguarding.js');
 
 
 var CustomerOverview = require('./components/customer/customer-overview.js');
-var SbspOverview = require('./components/sbsp/sbsp-overview.js');
+var SBSPOverview = require('./components/sbsp/sbsp-overview.js');
+var SBSPTemplate = require('./components/sbsp/sbsp-template.js');
+var SBSPSearchHire = require('./components/sbsp/search-hire.js');
+var SearchHireHire = require('./components/sbsp/search-hire-labour.js');
+
+var Compliance = require('./components/sbsp/compliance.js');
+
+
+
 
 
 
@@ -49,7 +57,21 @@ ReactDOM.render(
     </Route>
 
     <Route path='/CustomerOverview' component={CustomerOverview} />
-    <Route path='/SbspOverview' component={SbspOverview} />
+
+
+
+
+    <Route path='/SBSPTemplate' component={SBSPTemplate} >
+      <IndexRoute component={SBSPOverview}/>
+      <Route path='BackOffice' component={BackOffice}/>
+      <Route path='SearchHire' component={SBSPSearchHire}/>
+      <Route path='SearchHire/Labour' component={SearchHireHire}/>
+      <Route path='CurrentJobs' component={BuilderCurrentJobs}/>
+      <Route path='Wall' component={BuilderWall}/>
+      <Route path='Compliance' component={Compliance}/>
+
+
+    </Route>
 
   </Router>,
   rootElement
