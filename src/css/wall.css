@@ -1,0 +1,11 @@
+.wall{
+  border-radius: 1em;
+}
+
+.wall-first {
+  border: 3px #77919d solid;
+}
+
+.wall-second {
+  border: 3px #C8DFE9 solid;
+}
