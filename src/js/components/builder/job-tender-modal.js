@@ -29,7 +29,7 @@ var TenderModal = React.createClass({
             <h4 className="submit-tender-header center">Submit Tender</h4>
 
 
-              <div className="row">
+              <div className="row z-depth-1">
 
                 <div className="row">
                   <div className="input-field col s12 l6 left-align">

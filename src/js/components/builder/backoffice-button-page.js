@@ -1,6 +1,8 @@
 var React = require('react');
-
+var TextField = require('material-ui/lib/text-field');
+var WorkerDetails = require('./backoffice-worker-details.js');
 var BackOfficeButtonPage = React.createClass({
+
 
   componentDidMount(){
 
@@ -169,14 +171,7 @@ var BackOfficeButtonPage = React.createClass({
 
 
       <div className="modal" id="worker-details">
-        <div className="modal-content">
-
-          <h5 className="center">Coming Soon</h5>
-          <div className="modal-footer">
-              <a className="modal-action modal-close btn center primary-color waves-effect hover-color waves-light">Close</a>
-          </div>
-
-        </div>
+        <WorkerDetails />
       </div>
 
 
