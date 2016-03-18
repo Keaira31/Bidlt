@@ -1,10 +1,11 @@
 var React = require('react');
+var ComingSoon = require('../global/coming-soon.js');
 
 var JobSecurity = React.createClass({
   render: function(){
     return (
       <div className="">
-        <h1> Jobsecuity</h1>
+        <ComingSoon pageName={"Job Security"} icon={'vpn_key'} />
       </div>
     );
   }
