@@ -21,7 +21,6 @@ var BuilderWall = require('./components/builder/builder-wall.js');
 var Safeguarding = require('./components/builder/safeguarding.js');
 
 
-var CustomerOverview = require('./components/customer/customer-overview.js');
 var SBSPOverview = require('./components/sbsp/sbsp-overview.js');
 var SBSPTemplate = require('./components/sbsp/sbsp-template.js');
 var SBSPSearchHire = require('./components/sbsp/search-hire.js');
@@ -29,7 +28,13 @@ var SearchHireHire = require('./components/sbsp/search-hire-labour.js');
 
 var Compliance = require('./components/sbsp/compliance.js');
 
-
+var CustomerTemplate = require('./components/customer/customer-template.js');
+var CurrentWork = require('./components/customer/current-work.js');
+var CustomerTasks = require('./components/customer/customer-tasks.js');
+var RequestWork = require('./components/customer/request-work.js');
+var Inspiration = require('./components/customer/inspiration.js');
+var Advice = require('./components/customer/advice.js');
+var JobSecurity = require('./components/customer/job-security.js');
 
 
 
@@ -43,6 +48,7 @@ require('../css/index.js');
 ReactDOM.render(
   <Router history={hashHistory}>
     <Route path='/' component={App} />
+    
     <Route path='/BuilderTemplate' component={BuilderTemplate}>
       <IndexRoute component={BuilderOverview}/>
       <Route path='CurrentJobs' component={BuilderCurrentJobs}/>
@@ -53,13 +59,7 @@ ReactDOM.render(
       <Route path='SearchHire/Hire' component={SearchHireHire}/>
       <Route path='Wall' component={BuilderWall}/>
       <Route path='Safeguarding' component={Safeguarding}/>
-
     </Route>
-
-    <Route path='/CustomerOverview' component={CustomerOverview} />
-
-
-
 
     <Route path='/SBSPTemplate' component={SBSPTemplate} >
       <IndexRoute component={SBSPOverview}/>
@@ -69,8 +69,15 @@ ReactDOM.render(
       <Route path='CurrentJobs' component={BuilderCurrentJobs}/>
       <Route path='Wall' component={BuilderWall}/>
       <Route path='Compliance' component={Compliance}/>
+    </Route>
 
-
+    <Route path='/CustomerTemplate' component={CustomerTemplate}>
+      <IndexRoute component={CurrentWork}/>
+      <Route path='CustomerTasks' component={CustomerTasks}/>
+      <Route path='RequestWork' component={RequestWork}/>
+      <Route path='Inspiration' component={Inspiration}/>
+      <Route path='Advice' component={Advice}/>
+      <Route path='JobSecurity' component={JobSecurity}/>
     </Route>
 
   </Router>,
