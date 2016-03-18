@@ -50,3 +50,7 @@
   color: #354857;
   background-color: #C8DFE9;
 }
+
+.push-footer-to-bottom{
+  min-height: 76.5vh;
+}
