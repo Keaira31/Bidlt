@@ -58,8 +58,15 @@ var SearchHireButtonPage = React.createClass({
               <p>Available in {elem.urgency} Days</p>
               <p>{elem.cost}</p>
               <div className="right-align">
-              <a href="mailto:sohil@mec.com"><button className=" primary-color btn-floating waves-effect waves-light" type="submit" name="action"><i className="material-icons">call</i></button></a>
+
+
+                <a href="tel:07746811574">
+                <button className=" primary-color btn-floating waves-effect waves-light" type="submit" name="action"><i className="material-icons">call</i></button>
+                </a>
+
+              <a href='mailto:hello@bidlt.com' >
               <button className=" primary-color btn-floating waves-effect waves-light" type="submit" name="action"><i className="material-icons">mail</i></button>
+              </a>
               </div>
               <p className=" hide-on-med-and-down primary-text-color secondary-content">{elem.distance}</p>
             </li>
