@@ -21,7 +21,14 @@ var BuilderWall = require('./components/builder/builder-wall.js');
 var Safeguarding = require('./components/builder/safeguarding.js');
 
 
-var CustomerOverview = require('./components/customer/customer-overview.js');
+var CustomerTemplate = require('./components/customer/customer-template.js');
+var CurrentWork = require('./components/customer/current-work.js');
+var CustomerTasks = require('./components/customer/customer-tasks.js');
+var RequestWork = require('./components/customer/request-work.js');
+var Inspiration = require('./components/customer/inspiration.js');
+var Advice = require('./components/customer/advice.js');
+var JobSecurity = require('./components/customer/job-security.js');
+
 var SbspOverview = require('./components/sbsp/sbsp-overview.js');
 
 
@@ -48,9 +55,18 @@ ReactDOM.render(
 
     </Route>
 
-    <Route path='/CustomerOverview' component={CustomerOverview} />
-    <Route path='/SbspOverview' component={SbspOverview} />
+    <Route path='/CustomerTemplate' component={CustomerTemplate}>
+      <IndexRoute component={CurrentWork}/>
+      <Route path='CustomerTasks' component={CustomerTasks}/>
+      <Route path='RequestWork' component={RequestWork}/>
+      <Route path='Inspiration' component={Inspiration}/>
+      <Route path='Advice' component={Advice}/>
+      <Route path='JobSecurity' component={JobSecurity}/>
+    </Route>
 
+
+    <Route path='/SbspOverview' component={SbspOverview}>
+    </Route>
   </Router>,
   rootElement
 )
