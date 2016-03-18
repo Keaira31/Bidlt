@@ -17,7 +17,8 @@ var JobTender = require('./components/builder/job-tender.js');
 var BackOffice = require('./components/builder/backoffice.js');
 var SearchHire = require('./components/builder/search-hire.js');
 var SearchHireHire = require('./components/builder/search-hire-hire.js');
-
+var BuilderWall = require('./components/builder/builder-wall.js');
+var Safeguarding = require('./components/builder/safeguarding.js');
 
 
 var CustomerOverview = require('./components/customer/customer-overview.js');
@@ -42,7 +43,8 @@ ReactDOM.render(
       <Route path='BackOffice' component={BackOffice}/>
       <Route path='SearchHire' component={SearchHire}/>
       <Route path='SearchHire/Hire' component={SearchHireHire}/>
-
+      <Route path='Wall' component={BuilderWall}/>
+      <Route path='Safeguarding' component={Safeguarding}/>
 
     </Route>
 
