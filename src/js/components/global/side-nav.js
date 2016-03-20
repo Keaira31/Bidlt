@@ -7,7 +7,10 @@ var Link = require('react-router').Link
 var SideNav = React.createClass({
 
   componentDidMount () {
-    $(".button-collapse").sideNav();
+    $(".button-collapse").sideNav({
+      menuWidth: 200,
+      closeOnClick: true
+    });
   },
 
   render: function(){
