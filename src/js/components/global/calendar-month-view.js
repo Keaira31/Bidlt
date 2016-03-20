@@ -48,7 +48,7 @@ var CalendarMonthView = React.createClass({
     <div className="row">
       <div className=" calendar-large-view main-padding margin-30 center-align">
         <div className="component-title-box" onClick={this.onClickMonth}>
-          <h5>Month View<i className="material-icons right">expand_less</i></h5>
+          <h5>Month View</h5>
         </div>
         { this.state.showMonth ?
         <BigCalendar

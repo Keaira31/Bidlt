@@ -26,7 +26,7 @@ var Agenda = React.createClass({
     <div className="row">
       <div className="agenda-overview main-padding margin-30 center-align agenda-view ">
         <div className="component-title-box" onClick={this.onClick}>
-          <h5>Today's Agenda<i className="material-icons right">expand_less</i></h5>
+          <h5>Today's Agenda</h5>
         </div>
         { this.state.showAgenda ?
 
