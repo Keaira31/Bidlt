@@ -10,6 +10,7 @@ var Agenda = React.createClass({
   render: function(){
 
     return (
+    <div className="row">
       <div className="agenda-overview main-padding margin-30 center-align agenda-view ">
         <div className="component-title-box">
           <h5>Today's Agenda</h5>
@@ -17,11 +18,12 @@ var Agenda = React.createClass({
         <BigCalendar
           events={events}
           views={['day']}
-          defaultView='day'
+          defaultView={'day'}
           defaultDate={new Date(2015, 3, 1)}
           style={{height: 550}}
         />
       </div>
+    </div>
     );
   }
 });
