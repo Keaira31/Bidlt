@@ -20,10 +20,15 @@ var CalendarMonthView = React.createClass({
     var startTime = (jobObject.start).toString().slice(16, 21);
     var endTime = (jobObject.end).toString().slice(16, 21);
 
+    if(jobObject.allDay) {
+      $('.calendar-job-time').html('Time: All Day');
+    } else {
+      $('.calendar-job-time').html('Time: ' + startTime + ' - ' + endTime);
+    }
+
     $('#job-detail').openModal();
     $('.calendar-job-title').html(jobObject.title);
     $('.calendar-job-date').html(jobDate);
-    $('.calendar-job-time').html('Time: ' + startTime + ' - ' + endTime);
     $('.calendar-job-description').html(jobObject.desc);
   },
 

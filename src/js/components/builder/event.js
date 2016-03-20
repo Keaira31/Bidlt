@@ -1,56 +1,60 @@
 module.exports =   [
   {
-    "title": "All Day Event",
+    "title": "F&C Build contract",
     "allDay": true,
     "start": new Date(2015, 3, 0),
     "end": new Date(2015, 3, 0)
   },
   {
-    "title": "Long Event",
+    "title": "Equipment Inventory",
     "start": new Date(2015, 3, 7),
     "end": new Date(2015, 3, 10),
+    "allDay": true
   },
   {
-    "title": "Some Event",
+    "title": "H&S Compliance",
     "start": new Date(2015, 3, 9, 0, 0, 0),
     "end": new Date(2015, 3, 9, 0, 0, 0),
+    "allDay": true
   },
   {
-    "title": "Conference",
+    "title": "East London Contract",
     "start": new Date(2015, 3, 11),
     "end": new Date(2015, 3, 13),
-    desc: 'Big conference for important people'
+    "allDay": true,
+    desc: 'Start on build job in Mile End',
   },
   {
-    "title": "Meeting",
+    "title": "Meeting with site supervisor team",
     "start": new Date(2015, 3, 12, 10, 30, 0, 0),
     "end": new Date(2015, 3, 12, 12, 30, 0, 0),
-    desc: 'Pre-meeting meeting, to prepare for the meeting'
+    desc: 'Agenda: Set out plans for build over next few weeks'
   },
   {
-    "title": "Lunch",
+    "title": "View new site",
     "start":new Date(2015, 3, 12, 12, 0, 0, 0),
     "end": new Date(2015, 3, 12, 13, 0, 0, 0),
-    desc: 'Power lunch'
+    "allDay": true,
+    desc: 'Trip with contractors to see new site'
   },
   {
-    "title": "Meeting",
+    "title": "Return Equipment to West London",
     "start":new Date(2015, 3, 12,14, 0, 0, 0),
     "end": new Date(2015, 3, 12,15, 0, 0, 0)
   },
   {
-    "title": "Happy Hour",
+    "title": "Second build job starting in East London",
     "start":new Date(2015, 3, 12, 17, 0, 0, 0),
     "end": new Date(2015, 3, 12, 17, 30, 0, 0),
-    desc: "Most important meal of the day"
+    desc: "Find details from contractor and send to team"
   },
   {
-    "title": "Dinner",
+    "title": "Hire Equipment for new site",
     "start":new Date(2015, 3, 12, 20, 0, 0, 0),
     "end": new Date(2015, 3, 12, 21, 0, 0, 0)
   },
   {
-    "title": "Birthday Party",
+    "title": "Interview new worker team",
     "start":new Date(2015, 3, 13, 7, 0, 0),
     "end": new Date(2015, 3, 13, 10, 30, 0)
   }
