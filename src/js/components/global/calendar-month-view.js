@@ -16,6 +16,18 @@ var CalendarMonthView = React.createClass({
     });
   },
 
+  getInitialState: function() {
+       return { showMonth: true };
+  },
+
+  onClickMonth: function() {
+    if (this.state.showMonth === true) {
+      this.setState({ showMonth: false });
+    } else {
+      this.setState({ showMonth: true });
+    }
+  },
+
 
   modalView: function(jobObject) {
     var jobDate = (jobObject.start).toString().slice(0, 15);
@@ -35,9 +47,10 @@ var CalendarMonthView = React.createClass({
   <div>
     <div className="row">
       <div className=" calendar-large-view main-padding margin-30 center-align">
-        <div className="component-title-box">
-          <h5>Month View</h5>
+        <div className="component-title-box" onClick={this.onClickMonth}>
+          <h5>Month View<i className="material-icons right">expand_less</i></h5>
         </div>
+        { this.state.showMonth ?
         <BigCalendar
           selectable
           events={events}
@@ -48,7 +61,7 @@ var CalendarMonthView = React.createClass({
           style={
             {height: 900}
           }
-        />
+        /> : null}
       </div>
     </div>
 

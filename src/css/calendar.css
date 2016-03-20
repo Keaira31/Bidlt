@@ -11,3 +11,7 @@
   background-color: #354857 !important;
   color: white;
 }
+
+.rbc-show-more {
+  display: none;
+}
