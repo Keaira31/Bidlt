@@ -3,6 +3,8 @@ var BigCalendar = require('react-big-calendar');
 var moment = require('moment');
 var events = require('../builder/event.js');
 require('react-big-calendar/lib/css/react-big-calendar.css');
+require('../../../css/calendar.css');
+
 
 BigCalendar.momentLocalizer(moment);
 
@@ -43,7 +45,9 @@ var CalendarMonthView = React.createClass({
           defaultView='month'
           defaultDate={new Date(2015, 3, 1)}
           onSelectEvent={event => this.modalView(event)}
-          style={{height: 900}}
+          style={
+            {height: 900}
+          }
         />
       </div>
     </div>

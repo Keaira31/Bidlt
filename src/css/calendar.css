@@ -1,0 +1,13 @@
+.rbc-event {
+  background-color: #77919d !important;
+}
+
+.rbc-event:hover{
+  background-color: #C8DFE9 !important;
+  color: #354857;
+}
+
+.rbc-event.rbc-selected {
+  background-color: #354857 !important;
+  color: white;
+}
