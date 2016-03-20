@@ -1,9 +1,6 @@
 var React = require('react');
 var Link = require('react-router').Link
 
-
-
-
 var SideNav = React.createClass({
 
   componentDidMount () {
@@ -22,12 +19,22 @@ var SideNav = React.createClass({
     return (
       <div className="">
         <nav className="primary-color">
-          <ul id="slide-out" className="side-nav fixed mobile-slideout">
+          <ul id="full-size-nav" className="side-nav fixed left hide-on-med-and-down">
             <li className="logo center"><Link to='/' className="logo-our">{this.props.interface}</Link></li>
             {NavItems}
           </ul>
+
+          <ul id="mobile-nav slide-out" className="side-nav">
+            <li className="logo center"><Link to='/' className="logo-our">{this.props.interface}</Link></li>
+            {NavItems}
+          </ul>
+
           <a href="#" data-activates="slide-out" className="button-collapse"><i className="mdi-navigation-menu"></i></a>
-          </nav>
+        </nav>
+
+
+
+
       </div>
     );
   }
