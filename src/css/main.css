@@ -62,10 +62,14 @@
 }
 
 .push-footer-to-bottom{
-  min-height: 76.5vh;
+  min-height: 55.5em;
 }
 
 .icon-border {
   border: solid;
   border-color: green;
+}
+
+.request-work {
+  padding: 1em 2em;
 }

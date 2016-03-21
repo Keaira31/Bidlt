@@ -4,8 +4,7 @@ var RequestWork = require('../global/request-work.js');
 var SBSPRequestWork = React.createClass({
   render: function(){
     return (
-      <div className="">
-        <h1> SBPS Request Work</h1>
+      <div className="main-padding">
         <RequestWork />
       </div>
     );
