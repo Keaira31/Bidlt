@@ -25,13 +25,15 @@ var SBSPOverview = require('./components/sbsp/sbsp-overview.js');
 var SBSPTemplate = require('./components/sbsp/sbsp-template.js');
 var SBSPSearchHire = require('./components/sbsp/search-hire.js');
 var SBSPSearchHireLabour = require('./components/sbsp/search-hire-labour.js');
+var SBSPRequestWork = require('./components/sbsp/sbsp-request-work.js');
+
 
 var Compliance = require('./components/sbsp/compliance.js');
 
 var CustomerTemplate = require('./components/customer/customer-template.js');
 var CurrentWork = require('./components/customer/current-work.js');
 var CustomerTasks = require('./components/customer/customer-tasks.js');
-var RequestWork = require('./components/customer/request-work.js');
+var CustomerRequestWork = require('./components/customer/customer-request-work.js');
 var Inspiration = require('./components/customer/inspiration.js');
 var Advice = require('./components/customer/advice.js');
 var JobSecurity = require('./components/customer/job-security.js');
@@ -67,6 +69,8 @@ ReactDOM.render(
       <Route path='SearchHire' component={SBSPSearchHire}/>
       <Route path='SearchHire/Labour' component={SBSPSearchHireLabour}/>
       <Route path='CurrentJobs' component={BuilderCurrentJobs}/>
+      <Route path='RequestWork' component={SBSPRequestWork}/>
+
       <Route path='Wall' component={BuilderWall}/>
       <Route path='Compliance' component={Compliance}/>
     </Route>
@@ -74,7 +78,7 @@ ReactDOM.render(
     <Route path='/CustomerTemplate' component={CustomerTemplate}>
       <IndexRoute component={CurrentWork}/>
       <Route path='CustomerTasks' component={CustomerTasks}/>
-      <Route path='RequestWork' component={RequestWork}/>
+      <Route path='RequestWork' component={CustomerRequestWork}/>
       <Route path='Inspiration' component={Inspiration}/>
       <Route path='Advice' component={Advice}/>
       <Route path='JobSecurity' component={JobSecurity}/>
