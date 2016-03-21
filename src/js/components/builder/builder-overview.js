@@ -8,10 +8,16 @@ var BuilderOverview = React.createClass({
 
   render: function(){
     return (
-      <div className="">
-        <OverviewCurrentJobs />
-        <OverviewGoogleMap />
-        <Agenda />
+      <div className="overview-container">
+        <div className="overview-jobs-container">
+          <OverviewCurrentJobs />
+        </div>
+        <div className="overview-map-container top-margin">
+          <OverviewGoogleMap />
+        </div>
+        <div className="overview-agenda-container top-margin">
+          <Agenda />
+        </div>
       </div>
     );
   }
