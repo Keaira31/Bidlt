@@ -26,6 +26,8 @@ var SBSPTemplate = require('./components/sbsp/sbsp-template.js');
 var SBSPSearchHire = require('./components/sbsp/search-hire.js');
 var SBSPSearchHireLabour = require('./components/sbsp/search-hire-labour.js');
 var SBSPRequestWork = require('./components/sbsp/sbsp-request-work.js');
+var SBSPTasks = require('./components/sbsp/sbsp-tasks.js');
+
 
 
 var Compliance = require('./components/sbsp/compliance.js');
@@ -70,6 +72,7 @@ ReactDOM.render(
       <Route path='SearchHire/Labour' component={SBSPSearchHireLabour}/>
       <Route path='CurrentJobs' component={BuilderCurrentJobs}/>
       <Route path='RequestWork' component={SBSPRequestWork}/>
+      <Route path='Tasks' component={SBSPTasks}/>
 
       <Route path='Wall' component={BuilderWall}/>
       <Route path='Compliance' component={Compliance}/>
@@ -79,6 +82,7 @@ ReactDOM.render(
       <IndexRoute component={CurrentWork}/>
       <Route path='CustomerTasks' component={CustomerTasks}/>
       <Route path='RequestWork' component={CustomerRequestWork}/>
+      <Route path='Tasks' component={CustomerTasks}/>
       <Route path='Inspiration' component={Inspiration}/>
       <Route path='Advice' component={Advice}/>
       <Route path='JobSecurity' component={JobSecurity}/>

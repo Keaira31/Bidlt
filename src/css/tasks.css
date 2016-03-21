@@ -1,0 +1,7 @@
+.tasks-table {
+  table-layout: fixed;
+}
+
+.tasks-table > td {
+  word-wrap: break-word;
+}
