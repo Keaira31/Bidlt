@@ -3,6 +3,8 @@ var BigCalendar = require('react-big-calendar');
 var moment = require('moment');
 var events = require('../builder/event.js');
 require('react-big-calendar/lib/css/react-big-calendar.css');
+require('../../../css/calendar.css');
+
 
 BigCalendar.momentLocalizer(moment);
 
@@ -12,6 +14,18 @@ var CalendarMonthView = React.createClass({
     $(document).ready(function(){
       $('.modal-trigger').leanModal();
     });
+  },
+
+  getInitialState: function() {
+       return { showMonth: true };
+  },
+
+  onClickMonth: function() {
+    if (this.state.showMonth === true) {
+      this.setState({ showMonth: false });
+    } else {
+      this.setState({ showMonth: true });
+    }
   },
 
 
@@ -33,9 +47,10 @@ var CalendarMonthView = React.createClass({
   <div>
     <div className="row">
       <div className=" calendar-large-view main-padding margin-30 center-align">
-        <div className="component-title-box">
-          <h5>Month View</h5>
+        <div className="component-title-box" onClick={this.onClickMonth}>
+          <h5>Month View<i className="material-icons right">expand_less</i></h5>
         </div>
+        { this.state.showMonth ?
         <BigCalendar
           selectable
           events={events}
@@ -43,8 +58,10 @@ var CalendarMonthView = React.createClass({
           defaultView='month'
           defaultDate={new Date(2015, 3, 1)}
           onSelectEvent={event => this.modalView(event)}
-          style={{height: 900}}
-        />
+          style={
+            {height: 900}
+          }
+        /> : null}
       </div>
     </div>
 

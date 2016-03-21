@@ -64,3 +64,8 @@
 .push-footer-to-bottom{
   min-height: 76.5vh;
 }
+
+.icon-border {
+  border: solid;
+  border-color: green;
+}
