@@ -6,7 +6,7 @@ var CalendarMonthView = require('../global/calendar-month-view.js');
 var CurrentJobs = React.createClass({
   render: function(){
     return (
-      <div className="builder-current-jobs">
+      <div className="sbsp-current-jobs">
         <Agenda />
         <CalendarMonthView />
       </div>
