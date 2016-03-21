@@ -12,7 +12,7 @@ var BuilderTemplate = React.createClass({
 
     return (
       <div className="">
-        <SideNav navArray={navArr} interface={'BIDLT: Builder'}/>
+        <SideNav navArray={navArr} interface={'BIDLT: SBSP'}/>
         <Header name={"SBSP Company"} address={'143 Commercial Street, London'}/>
         {this.props.children}
         <Footer />
