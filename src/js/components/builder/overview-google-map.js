@@ -43,30 +43,37 @@ var Markers = {
              }],
              canSubmit: false
     }
-var OverviewGoogleMap = function (props) {
+var OverviewGoogleMap = React.createClass({
 
-  return (
-    <div className="row main-padding margin-30 center-align">
-        <div className="component-title-box">
-          <h5>Available Jobs</h5>
+
+  componentDidMount(){
+
+  },
+  render: function(){
+    return (
+        <div className="row main-padding margin-30 center-align">
+            <div className="component-title-box">
+              <h5>Available Jobs</h5>
+            </div>
+
+          <section style={{height: "25em"}}>
+            <GoogleMapLoader
+               containerElement={<div style={{height: "25em"}}></div>}
+               googleMapElement={
+                 <GoogleMap ref={map => ("GoogleMap", map)} defaultZoom={11} options={{ scrollwheel: false}} defaultCenter={{lat:51.529571, lng: -0.042356}}  >
+                   {Markers.markers.map((marker, index) => {
+                     return (
+                       <Marker {...marker} setanimation='drop'	 />
+                     );
+                   })}
+                 </GoogleMap>
+               }
+            />
+          </section>
         </div>
+      );
+    }
+  })
 
-      <section style={{height: "25em"}}>
-        <GoogleMapLoader
-           containerElement={<div {...props} style={{height: "25em"}}/>}
-           googleMapElement={
-             <GoogleMap ref={map => ("GoogleMap", map)}  defaultZoom={11} defaultCenter={{lat:51.529571, lng: -0.042356}}  >
-               {Markers.markers.map((marker, index) => {
-                 return (
-                   <Marker {...marker} />
-                 );
-               })}
-             </GoogleMap>
-           }
-        />
-      </section>
-    </div>
-  );
-}
 
 module.exports = OverviewGoogleMap;
