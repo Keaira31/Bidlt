@@ -2,16 +2,40 @@
   background-color: #77919d !important;
 }
 
-.rbc-event:hover{
+
+.rbc-event:hover, .rbc-toolbar button:hover {
   background-color: #C8DFE9 !important;
-  color: #354857;
+  color: #354857 !important;
 }
 
-.rbc-event.rbc-selected {
+.rbc-event.rbc-selected, .rbc-toolbar button.rbc-active {
   background-color: #354857 !important;
-  color: white;
+  color: white !important;
 }
 
 .rbc-show-more {
   display: none;
+}
+
+.rbc-toolbar .rbc-toolbar-label {
+  padding-right: 4.0em;
+}
+
+
+.rbc-time-header>.rbc-row:first-child {
+  padding-right: 4.5em;
+}
+
+@media only screen and (max-width: 992px){
+  .calendar-large-view .rbc-toolbar {
+    display:flex;
+  }
+  .calendar-large-view .rbc-calendar {
+    height:400px !important;
+  }
+
+  .rbc-toolbar .rbc-toolbar-label {
+    padding-right: 0em;
+  }
+
 }
