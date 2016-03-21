@@ -9,3 +9,7 @@
 .wall-second {
   border: 3px #C8DFE9 solid;
 }
+
+.placeholder-div {
+  height: 6em;
+}
