@@ -1,6 +1,10 @@
 var React = require('react');
 var SelectField = require('material-ui/lib/select-field');
 var MenuItem = require('material-ui/lib/menus/menu-item');
+var TextField = require('material-ui/lib/TextField');
+var DatePicker = require('material-ui/lib/date-picker/date-picker');
+var Slider = require('material-ui/lib/slider');
+
 
 
 
@@ -21,7 +25,13 @@ var RequestWork = React.createClass({
 
   render: function(){
     return (
-      <div className="main-padding margin-30">
+      <div className="margin-30 push-footer-to-bottom">
+
+        <div className="component-title-box">
+        <h5 className="center-align"> Request Work</h5>
+        </div>
+
+        <div className=" request-work z-depth-1">
 
         <label>Trade Required</label>
         <div className="row">
@@ -38,6 +48,60 @@ var RequestWork = React.createClass({
             </SelectField>
           </div>
         </div>
+
+        <label>Job Required</label>
+        <div className="row">
+          <div className="col s12 l6">
+            <TextField
+              hintText="..."
+              multiLine={true}
+              rows={4}
+              rowsMax={8}
+            />
+          </div>
+        </div>
+
+        <label>Proximity</label>
+        <div className="row">
+          <div className="col s12 l6">
+            <Slider min={0} max={50} step={1} value={10} />
+          </div>
+        </div>
+
+        <label>Required Start Date</label>
+        <div className="row">
+          <div className="col s12 l6">
+            <DatePicker hintText="Date" locale='uk' />
+          </div>
+        </div>
+
+
+
+        <label>Site Viewing Availability From</label>
+        <div className="row">
+          <div className="col s12 l2">
+            <DatePicker hintText="Date" locale='uk' />
+          </div>
+        </div>
+
+        <label>Site Viewing Availability To</label>
+        <div className="row">
+          <div className="col s12 l2">
+            <DatePicker hintText="Date" locale='uk' />
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col s12 l6">
+            <a className="waves-effect waves-light btn darkest-color"><i className="material-icons left">file_upload</i>Upload Files</a>
+          </div>
+        </div>
+
+         </div>
+
+
+
+
 
       </div>
     );
