@@ -1,14 +1,15 @@
 var React = require('react');
-var Link = require('react-router').Link
+var Link = require('react-router').Link;
 
 var SideNav = React.createClass({
 
   componentDidMount () {
     $(".button-collapse").sideNav({
-      menuWidth: 200,
       closeOnClick: true
     });
   },
+
+
 
   render: function(){
     var navArray = this.props.navArray;
@@ -19,12 +20,12 @@ var SideNav = React.createClass({
     return (
       <div className="">
         <nav className="primary-color">
-          <ul id="full-size-nav" className="side-nav fixed left hide-on-med-and-down">
+          <ul className="side-nav fixed left hide-on-med-and-down">
             <li className="logo center"><Link to='/' className="logo-our">{this.props.interface}</Link></li>
             {NavItems}
           </ul>
 
-          <ul id="mobile-nav slide-out" className="side-nav">
+          <ul id="slide-out" className="side-nav">
             <li className="logo center"><Link to='/' className="logo-our">{this.props.interface}</Link></li>
             {NavItems}
           </ul>
