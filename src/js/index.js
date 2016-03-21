@@ -48,7 +48,7 @@ InjectTapEventPlugin();
 require('../css/index.js');
 
 ReactDOM.render(
-  <Router history={hashHistory}>
+  <Router onUpdate={() => window.scrollTo(0, 0)} history={hashHistory}>
     <Route path='/' component={App} />
 
     <Route path='/BuilderTemplate' component={BuilderTemplate}>
