@@ -5,3 +5,4 @@ require('./job-search.css');
 require('./backoffice.css');
 require('./search-hire.css');
 require('./wall.css');
+require('./tasks.css');
