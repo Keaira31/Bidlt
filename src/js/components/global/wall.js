@@ -3,7 +3,7 @@ var React = require('react');
 var Splash = React.createClass({
   render: function(){
     return (
-      <div className="main-padding margin-30 search-hire-button">
+      <div className="main-padding margin-30">
 
         <div className="component-title-box">
         <h5 className="center-align"> Available Jobs </h5>
@@ -12,40 +12,37 @@ var Splash = React.createClass({
         <div className="row ">
 
           <div className="col s12 l10">
+          <div>
             <ul className="collection wall wall-first">
               <li className="collection-item">
                 <span className="title">Hey Are you going to take the new job in E2?</span>
-                <p>
-                <br></br>
-                </p>
+                <p><br></br></p>
               </li>
             </ul>
+          </div>
 
+          <div>
             <ul className="collection wall right-align wall-second">
               <li className="collection-item  right-align">
-                <span className="title">Not Sure, the rate is not great.</span>
-                  <p>
-                  <br></br>
-                  </p>
+                <span className="title">Not Sure, the rate isn't great.</span>
+                  <p><br></br></p>
               </li>
             </ul>
+          </div>
+
+          <div>
             <ul className="collection wall wall-first">
               <li className="collection-item ">
-                <span className="title">Hey Are you going to take the new job in E2?</span>
+                <span className="title">Ah, fair. There's loads of stuff in the calendar anyway.</span>
                   <p>
                   <br></br>
                   </p>
               </li>
             </ul>
+          </div>
 
-            <ul className="collection wall right-align wall-second">
-              <li className="collection-item  right-align">
-                <span className="title">Not Sure, the rate is not great.</span>
-                  <p>
-                  <br></br>
-                  </p>
-              </li>
-            </ul>
+          <div className="row placeholder-div">
+          </div>
 
             <div className="z-depth-1 wall-comment row">
               <form className="col s12">
