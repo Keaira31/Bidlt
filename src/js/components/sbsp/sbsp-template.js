@@ -7,7 +7,7 @@ var Footer = require('../global/footer.js');
 var BuilderTemplate = React.createClass({
 
   render: function(){
-    var navArr = [{name:'Overview',url:'/SBSPTemplate', icon:'dashboard'}, {name:'Current Jobs',url:'/SBSPTemplate/CurrentJobs', icon:'event'}, {name:'Available Jobs',url:'/SBSPTemplate/AvailableJobs', icon: 'work'},{name:'Back Office',url:'/SBSPTemplate/BackOffice', icon: 'receipt'},{name:'Wall',url:'/SBSPTemplate/Wall', icon:'chat_bubble_outline'},{name:'Search & Hire',url:'/SBSPTemplate/SearchHire', icon: 'build'}, {name:'Compliance',url:'/SBSPTemplate/Compliance', icon: 'library_books'}];
+    var navArr = [{name:'Overview',url:'/SBSPTemplate', icon:'dashboard'}, {name:'Current Jobs',url:'/SBSPTemplate/CurrentJobs', icon:'event'}, {name:'Tasks',url:'/SBSPTemplate/CustomerTasks', icon:'list'}, {name:'Request Work',url:'/SBSPTemplate/RequestWork', icon: 'open_in_browser'},{name:'Back Office',url:'/SBSPTemplate/BackOffice', icon: 'receipt'},{name:'Wall',url:'/SBSPTemplate/Wall', icon:'chat_bubble_outline'},{name:'Search & Hire',url:'/SBSPTemplate/SearchHire', icon: 'build'}, {name:'Compliance',url:'/SBSPTemplate/Compliance', icon: 'library_books'}];
     console.log("rendering builder template");
 
     return (
