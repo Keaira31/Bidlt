@@ -6,9 +6,46 @@ var SbspOverview = React.createClass({
   render: function(){
     return (
       <div className="">
-        Hello SBPS Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. SBSP
-        <Agenda />
+        <div className="main-padding margin-30">
+          <div className="component-title-box">
+            <h5 className="center-align"> Tasks Overview </h5>
+          </div>
 
+          <div className="row">
+          <table className=" tasks-table bordered responsive-table">
+            <thead>
+              <tr>
+                  <th data-field="id">Description</th>
+                  <th data-field="name">Time</th>
+                  <th data-field="price">Priority</th>
+                  <th data-field="price">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Completion SW Build</td>
+                <td>5 days</td>
+                <td>Medium</td>
+                <td>In Progress</td>
+              </tr>
+              <tr>
+                <td>Build in East London</td>
+                <td>3 days</td>
+                <td>Low</td>
+                <td>Pending</td>
+              </tr>
+
+              <tr>
+                <td>Site visit for new project</td>
+                <td>1 days</td>
+                <td>Low</td>
+                <td>Completed</td>
+              </tr>
+            </tbody>
+            </table>
+          </div>
+        </div>
+        <Agenda />
       </div>
     );
   }
