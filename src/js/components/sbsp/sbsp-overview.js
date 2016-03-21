@@ -44,7 +44,41 @@ var SbspOverview = React.createClass({
             </tbody>
             </table>
           </div>
+
+          <div className="component-title-box">
+            <h5 className="center-align"> Files Uploaded </h5>
+          </div>
+
+
+          <div className="row">
+            <div className="col s12 l4">
+              <ul className="collection with-header">
+                <li className="collection-item "><div>Alvin<a href="#!" className="secondary-content"><i className="material-icons darkest-text-color">file_download</i></a></div></li>
+                <li className="collection-item "><div>Alvin<a href="#!" className="secondary-content"><i className="material-icons darkest-text-color">file_download</i></a></div></li>
+                <li className="collection-item "><div>Alvin<a href="#!" className="secondary-content"><i className="material-icons darkest-text-color">file_download</i></a></div></li>
+              </ul>
+            </div>
+            <div className="col s12 l4">
+              <ul className="collection with-header">
+                <li className="collection-item "><div>Alvin<a href="#!" className="secondary-content"><i className="material-icons darkest-text-color">file_download</i></a></div></li>
+                <li className="collection-item "><div>Alvin<a href="#!" className="secondary-content"><i className="material-icons darkest-text-color">file_download</i></a></div></li>
+                <li className="collection-item "><div>Alvin<a href="#!" className="secondary-content"><i className="material-icons darkest-text-color">file_download</i></a></div></li>
+              </ul>
+            </div>
+            <div className="col s12 l4">
+              <ul className="collection with-header">
+                <li className="collection-item "><div>Alvin<a href="#!" className="secondary-content"><i className="material-icons darkest-text-color">file_download</i></a></div></li>
+                <li className="collection-item "><div>Alvin<a href="#!" className="secondary-content"><i className="material-icons darkest-text-color">file_download</i></a></div></li>
+                <li className="collection-item "><div>Alvin<a href="#!" className="secondary-content"><i className="material-icons darkest-text-color">file_download</i></a></div></li>
+              </ul>
+            </div>
+          </div>
+
+
+
         </div>
+
+
         <Agenda />
       </div>
     );
