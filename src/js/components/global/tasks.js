@@ -53,8 +53,9 @@ var Tasks = React.createClass({
 
     return (
       <div className="">
-        <h5 className="center">Tasks</h5>
-        <br></br>
+        <div className="component-title-box">
+          <h5 className="center-align"> Task List </h5>
+        </div>
 
 
         <div className=" request-work row z-depth-1">
