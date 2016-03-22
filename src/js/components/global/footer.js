@@ -6,7 +6,7 @@ var LandingFooter = React.createClass({
       <div className="landing-footer main-padding">
         <footer className='page-footer'>
           <div className='footer-copyright primary-color'>
-            <div className='container'>
+            <div className='footer-admin'>
               2016 BIDLT
               <a className='right'>CONTACT US</a>
             </div>
