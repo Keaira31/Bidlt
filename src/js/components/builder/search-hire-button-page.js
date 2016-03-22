@@ -15,7 +15,7 @@ var SearchHireButtonPage = React.createClass({
       <div className="main-padding margin-30 search-hire-button">
 
         <div className="row">
-          <div className="search-hire-button-outer-div col s12 l2 offset-l4" >
+          <div className="search-hire-button-outer-div col s12 m6 l3 offset-l3" >
             <div className="backoffice-button-individual valign-wrapper" >
               <div className="valign backoffice-icon-text">
                 <a className="modal-trigger" href="#coming-soon">
@@ -27,8 +27,8 @@ var SearchHireButtonPage = React.createClass({
               </div>
             </div>
           </div>
-          <div className=" col s12 l2" >
-            <div className="search-hire-button-individual valign-wrapper" >
+          <div className="search-hire-button-outer-div col s12 m6 l3" >
+            <div className="backoffice-button-individual valign-wrapper" >
               <div className="valign backoffice-icon-text">
                 <Link className="modal-trigger" to="/BuilderTemplate/SearchHire/Hire">
                  <i className="material-icons large">content_paste</i>
@@ -42,8 +42,8 @@ var SearchHireButtonPage = React.createClass({
         </div>
 
         <div className="row">
-          <div className="search-hire-button-outer-div col s12 l2 offset-l4" >
-            <div className="search-hire-button-individual valign-wrapper" >
+          <div className="search-hire-button-outer-div col s12 m6 l3 offset-l3" >
+            <div className="backoffice-button-individual valign-wrapper" >
               <div className="valign backoffice-icon-text">
                 <a className="modal-trigger" href="#coming-soon">
                  <i className="material-icons large">person_pin</i>
@@ -54,8 +54,8 @@ var SearchHireButtonPage = React.createClass({
               </div>
             </div>
           </div>
-          <div className=" col s12 l2" >
-            <div className="search-hire-button-individual valign-wrapper" >
+          <div className="search-hire-button-outer-div col s12 m6 l3" >
+            <div className="backoffice-button-individual valign-wrapper" >
               <div className="valign backoffice-icon-text">
                 <a className="modal-trigger" href="#coming-soon">
                  <i className="material-icons large">build</i>

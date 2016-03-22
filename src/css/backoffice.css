@@ -3,16 +3,16 @@
 }
 
 .backoffice-button-individual{
-  height:200px;
-  width:200px;
+  height:300px;
   background-color: #C8DFE9;
   text-align: center;
   border: 1px solid black;
   margin: 0 auto;
+
 }
 
 .backoffice-icon-text{
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   color: #354857;
@@ -27,4 +27,13 @@
 
 .backoffice-button-outer-div{
   margin-bottom: 1.5em;
+}
+.backoffice-three-button-custom{
+  margin-left:95px;
+}
+
+@media only screen and (max-width: 992px){
+  .backoffice-three-button-custom{
+    margin-left:0px;
+  }
 }
