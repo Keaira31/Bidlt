@@ -63,7 +63,7 @@ var OverviewGoogleMap = React.createClass({
                  <GoogleMap ref={map => ("GoogleMap", map)} defaultZoom={11} options={{ scrollwheel: false}} defaultCenter={{lat:51.529571, lng: -0.042356}}  >
                    {Markers.markers.map((marker, index) => {
                      return (
-                       <Marker {...marker} options={{icon:'../../../../assets/images/spanner.png'}}	 />
+                       <Marker {...marker} options={{icon:'../../../../assets/images/spanner.png'}} 	 />
                      );
                    })}
                  </GoogleMap>
