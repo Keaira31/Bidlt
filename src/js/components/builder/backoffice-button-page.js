@@ -14,8 +14,8 @@ var BackOfficeButtonPage = React.createClass({
   render: function(){
     return (
       <div className="builder-backoffice-buttons main-padding margin-30">
-        <div className="row">
-          <div className="col s12 l2 offset-l3 backoffice-button-outer-div " >
+        <div className="row backoffice-three-button-custom">
+          <div className="col s12 l3 m4 offset-l1 backoffice-button-outer-div " >
             <div className="backoffice-button-individual valign-wrapper  " >
               <div className="valign backoffice-icon-text">
                 <a className="modal-trigger" href="#job-history">
@@ -28,7 +28,7 @@ var BackOfficeButtonPage = React.createClass({
               </div>
             </div>
           </div>
-          <div className="col s12 l2 backoffice-button-outer-div" >
+          <div className="col s12 l3 m4 backoffice-button-outer-div" >
             <div className="backoffice-button-individual  valign-wrapper" >
               <div className="valign backoffice-icon-text">
                 <a className="modal-trigger" href="#worker-details">
@@ -40,7 +40,7 @@ var BackOfficeButtonPage = React.createClass({
               </div>
             </div>
           </div>
-          <div className="col s12 l2" >
+          <div className="backoffice-button-outer-div col s12 m4 l3" >
             <div className="backoffice-button-individual valign-wrapper" >
               <div className="valign backoffice-icon-text">
                 <a className="modal-trigger" href="#invoices">
@@ -55,7 +55,7 @@ var BackOfficeButtonPage = React.createClass({
         </div>
 
         <div className="row">
-          <div className="backoffice-button-outer-div col s12 l2 offset-l4" >
+          <div className="backoffice-button-outer-div col s12 l3 m6 offset-l3" >
             <div className="backoffice-button-individual valign-wrapper" >
               <div className="valign backoffice-icon-text">
                 <a className="modal-trigger" href="#coming-soon">
@@ -67,7 +67,7 @@ var BackOfficeButtonPage = React.createClass({
               </div>
             </div>
           </div>
-          <div className=" col s12 l2" >
+          <div className="backoffice-button-outer-div col s12 l3 m6" >
             <div className="backoffice-button-individual valign-wrapper" >
               <div className="valign backoffice-icon-text">
                 <a className="modal-trigger" href="#coming-soon">
