@@ -4,11 +4,23 @@ var MenuItem = require('material-ui/lib/menus/menu-item');
 var TextField = require('material-ui/lib/TextField');
 var DatePicker = require('material-ui/lib/date-picker/date-picker');
 var Slider = require('material-ui/lib/slider');
-
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import MyRawTheme from './custom-theme.js';
 
 
 
 var RequestWork = React.createClass({
+
+  childContextTypes : {
+    muiTheme: React.PropTypes.object,
+  },
+
+  getChildContext() {
+    return {
+      muiTheme:   ThemeManager.getMuiTheme(MyRawTheme),
+    };
+  },
+
 
   getInitialState: function() {
     return {

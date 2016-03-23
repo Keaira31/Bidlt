@@ -1,7 +1,21 @@
 var React = require('react');
 var TextField = require('material-ui/lib/text-field');
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import MyRawTheme from '../global/custom-theme.js';
+
 
 var WorkerDetails = React.createClass({
+
+  childContextTypes : {
+    muiTheme: React.PropTypes.object,
+  },
+
+  getChildContext() {
+    return {
+      muiTheme:   ThemeManager.getMuiTheme(MyRawTheme),
+    };
+  },
+
   getInitialState(){
     return {
       name: '',

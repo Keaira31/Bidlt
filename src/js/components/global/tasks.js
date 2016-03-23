@@ -2,9 +2,20 @@ var React = require('react');
 var TextField = require('material-ui/lib/text-field');
 var SelectField = require('material-ui/lib/select-field');
 var MenuItem = require('material-ui/lib/menus/menu-item');
-
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import MyRawTheme from './custom-theme.js';
 
 var Tasks = React.createClass({
+
+  childContextTypes : {
+    muiTheme: React.PropTypes.object,
+  },
+
+  getChildContext() {
+    return {
+      muiTheme: ThemeManager.getMuiTheme(MyRawTheme),
+    };
+  },
   getInitialState(){
     return {
       description: '',
