@@ -4,8 +4,21 @@ var MenuItem = require('material-ui/lib/menus/menu-item');
 var Slider = require('material-ui/lib/slider');
 var JobData = require('./job-data.js');
 var Link = require('react-router').Link;
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import MyRawTheme from '../global/custom-theme.js';
+
 
 var JobSearch = React.createClass({
+
+  childContextTypes : {
+    muiTheme: React.PropTypes.object,
+  },
+
+  getChildContext() {
+    return {
+      muiTheme:   ThemeManager.getMuiTheme(MyRawTheme),
+    };
+  },
 
   getInitialState: function() {
     return {

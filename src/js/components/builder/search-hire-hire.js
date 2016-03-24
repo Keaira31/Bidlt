@@ -4,9 +4,22 @@ var MenuItem = require('material-ui/lib/menus/menu-item');
 var Slider = require('material-ui/lib/slider');
 var HireData = require('./hire-data.js');
 var Link = require('react-router').Link;
+import ThemeManager from 'material-ui/lib/styles/theme-manager';
+import MyRawTheme from '../global/custom-theme.js';
+
 
 
 var SearchHireButtonPage = React.createClass({
+
+  childContextTypes : {
+    muiTheme: React.PropTypes.object,
+  },
+
+  getChildContext() {
+    return {
+      muiTheme:   ThemeManager.getMuiTheme(MyRawTheme),
+    };
+  },
 
   getInitialState: function() {
     return {
