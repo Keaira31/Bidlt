@@ -9,10 +9,12 @@ var LandingFooter= require('./landing-footer.js');
 var LandingPage = React.createClass({
   render: function(){
     return (
-      <div className="col s12 l12 landing-page">
-        <LandingHeader />
-        <Splash />
-        <InterfaceButtons />
+      <div className="landing-page">
+        <div className="row">
+          <Splash />
+        </div>
+
+
         <AboutUs />
         <LandingFooter />
       </div>

@@ -5,7 +5,7 @@ var AboutUs = React.createClass({
     return (
       <div className="about-us-container darkest-color">
         <div className="row about-us darkest-color">
-          <div className='col s12 l12 center'>
+          <div className='col s12 l12  container center'>
             <h2 className="header about-us-header">Welcome to BIDLT</h2>
           </div>
 
