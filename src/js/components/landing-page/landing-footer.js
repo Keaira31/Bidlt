@@ -1,4 +1,5 @@
 var React = require('react');
+var Link = require('react-router').Link;
 
 var LandingFooter = React.createClass({
   render: function(){
@@ -14,9 +15,9 @@ var LandingFooter = React.createClass({
               <div className="col l4 offset-l2 s12">
                 <h5 className="white-text">I am a...</h5>
                 <ul>
-                  <li><a className="" href="#!">Builder</a></li>
-                  <li><a className="" href="#!">Small Project or Build Owner</a></li>
-                  <li><a className="" href="#!">Customer</a></li>
+                  <li><Link to="/BuilderTemplate" className="" href="#!">Builder</Link></li>
+                  <li><Link to="/SBSPTemplate" className="" href="#!">Small Project or Build Owner</Link></li>
+                  <li><Link to="/CustomerTemplate" className="" href="#!">Customer</Link></li>
                   <li><a className="" href="#!">Looking to Lease</a></li>
                   <li><a className="" href="#!">Supplier</a></li>
                   <li><a className="" href="#!">Project Holder</a></li>
