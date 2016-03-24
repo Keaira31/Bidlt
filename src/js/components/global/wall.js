@@ -49,7 +49,7 @@ var Splash = React.createClass({
                 <div className="row">
                   <div className="input-field col s12">
                     <textarea id="textarea1" className="materialize-textarea"></textarea>
-                    <label for="textarea1">Type your message here</label>
+                    <label className="active" for="textarea1">Type your message here</label>
                   </div>
                 </div>
               </form>

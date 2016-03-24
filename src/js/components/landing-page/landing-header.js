@@ -43,13 +43,13 @@ var LandingHeader = React.createClass({
             <div className="row">
               <div className="input-field col s12">
                 <input id="email" type="email" />
-                <label >Email</label>
+                <label className="active">Email</label>
               </div>
             </div>
             <div className="row">
               <div className="input-field col s12">
                 <input id="password" type="password" />
-                <label >Password</label>
+                <label className="active">Password</label>
               </div>
             </div>
 
