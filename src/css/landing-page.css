@@ -2,15 +2,7 @@ body {
     /*background-color: #d7ccc8;*/
 }
 
-.main-padding {
-  padding-left: 240px;
-}
 
-@media only screen and (max-width: 992px){
-  .main-padding {
-    padding-left: 0;
-  }
-}
 
 
 .splash {
@@ -29,11 +21,14 @@ body {
   font-size: 6em;
   line-height: 100%;
   margin: 10.2rem 0 1rem 0;
-  background-color: rgba(119, 145, 157, 0.75);
+  background-color: rgba(119, 145, 157, 0.60);
   color: white;
   padding: 0.25em;
 }
 
+.sign-in {
+
+}
 
 nav .brand-logo {
     font-size: 3.1rem;
@@ -52,9 +47,13 @@ nav .brand-logo {
 /*About US*/
 
 .about-us {
-  margin: 0;
   width:80%;
-  margin: auto;
+  padding-top: 2em;
+  margin-bottom: 0
+}
+
+.about-us-header {
+  color:#C8DFE9;
 }
 
 .about-us-text{
@@ -77,10 +76,13 @@ footer.page-footer a{
 
 /*BUTTONS */
 
-.waves-effect.hover-color:hover{
-  background-color: #586b73;
-}
-.interface-button{
+
+.interface-button, .interface-button:hover{
   width: 180px;
   margin: 0.5em;
+  background-color: #586b73;
+  /*background-color: white;*/
+  color: #C8DFE9 ;
+  font-size: 20px;
+  font-weight: bold;
 }

@@ -10,13 +10,11 @@ var LandingPage = React.createClass({
   render: function(){
     return (
       <div className="landing-page">
-        <div className="row">
+
           <Splash />
-        </div>
+          <AboutUs />
+          <LandingFooter />
 
-
-        <AboutUs />
-        <LandingFooter />
       </div>
     );
   }
