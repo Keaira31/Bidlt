@@ -21,6 +21,10 @@
   padding-right: 4.0em;
 }
 
+.rbc-time-header .rbc-gutter-cell {
+  display: none;
+}
+
 
 .rbc-time-header>.rbc-row:first-child {
   padding-right: 4.5em;
