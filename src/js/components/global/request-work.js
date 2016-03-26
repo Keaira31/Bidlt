@@ -24,7 +24,8 @@ var RequestWork = React.createClass({
 
   getInitialState: function() {
     return {
-      trade: "All"
+      trade: "All",
+      proximity: 10
 
     };
   },
@@ -32,6 +33,12 @@ var RequestWork = React.createClass({
   getValue: function(event, index, value) {
     this.setState({
       trade: value
+    });
+  },
+
+  getProximity: function(event, value) {
+    this.setState({
+      proximity: value
     });
   },
 
@@ -76,7 +83,8 @@ var RequestWork = React.createClass({
         <label>Proximity</label>
         <div className="row">
           <div className="col s12 l6">
-            <Slider min={0} max={50} step={1} value={10} />
+            <div><p>{this.state.proximity} miles</p></div>
+            <Slider min={0} max={50} step={1} value={this.state.proximity} onChange={this.getProximity}/>
           </div>
         </div>
 
