@@ -131,6 +131,7 @@ var JobSearch = React.createClass({
         <label>Proximity</label>
         <div className="row">
           <div className="col s12 l6">
+            <div><p>{this.state.proximity} miles</p></div>
             <Slider min={0} max={50} step={1} value={this.state.proximity} onChange={this.getProximity}/>
           </div>
         </div>
