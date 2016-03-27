@@ -2,37 +2,34 @@ body {
     /*background-color: #d7ccc8;*/
 }
 
-.main-padding {
-  padding-left: 240px;
-}
 
-@media only screen and (max-width: 992px){
-  .main-padding {
-    padding-left: 0;
-  }
-}
 
 
 .splash {
   background: url('https://images.unsplash.com/photo-1429963357583-999c3121a8ce?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925');
   background-repeat:no-repeat;
   background-size: cover;
-  margin:auto;
-  height:500px;
-  margin: 0 auto;
+  /*margin:auto;*/
+  height:600px;
+  /*margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center;*/
 }
 
 .splash-title {
-  font-size: 7.56rem;
-  line-height: 110%;
-  margin: 1.78rem 0 1.424rem 0;
-  background-color: rgba(119, 145, 157, 0.59);
+  font-size: 6em;
+  line-height: 100%;
+  margin: 10.2rem 0 1rem 0;
+  background-color: rgba(119, 145, 157, 0.60);
   color: white;
   padding: 0.25em;
 }
+
+.sign-in {
+
+}
+
 nav .brand-logo {
     font-size: 3.1rem;
 }
@@ -50,9 +47,14 @@ nav .brand-logo {
 /*About US*/
 
 .about-us {
-  margin: 0;
-  width:80%;
-  margin: auto;
+  padding-top: 2em;
+  margin-bottom: 0;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.about-us-header {
+  color:#C8DFE9;
 }
 
 .about-us-text{
@@ -62,6 +64,15 @@ nav .brand-logo {
 }
 
 /*Footer*/
+@media only screen and (max-width: 992px){
+  .about-us-footer-main{
+    text-align: center;
+  }
+  .col.l4.offset-l2.s12.about-us-footer-sign-in{
+    text-align: center;
+  }
+}
+
 footer.page-footer {
   padding: 0;
   margin: 0;
@@ -73,12 +84,24 @@ footer.page-footer a{
   color: #ffffff;
 }
 
+.about-us-footer-sign-in{
+  text-align: right;
+}
+
+.about-us-footer-main{
+  margin-left: 8% !important;
+  margin-right: 8% !important;
+}
+
 /*BUTTONS */
 
-.waves-effect.hover-color:hover{
-  background-color: #586b73;
-}
-.interface-button{
+
+.interface-button, .interface-button:hover{
   width: 180px;
   margin: 0.5em;
+  background-color: #586b73;
+  /*background-color: white;*/
+  color: #C8DFE9 ;
+  font-size: 20px;
+  font-weight: bold;
 }

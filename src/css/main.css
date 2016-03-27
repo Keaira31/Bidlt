@@ -42,6 +42,10 @@
   margin-top: 30px;
 }
 
+.main-padding {
+  padding-left: 240px;
+}
+
 
 .link-tag {
   color: black !important;
