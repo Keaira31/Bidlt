@@ -112,10 +112,18 @@ var RequestWork = React.createClass({
         </div>
 
         <div className="row">
-          <div className="col s12 l6">
-            <a className="waves-effect waves-light btn darkest-color"><i className="material-icons left">file_upload</i>Upload Files</a>
+          <div className="col s12 l6 file-field input-field">
+            <div className="waves-effect waves-light btn darkest-color">
+              <i className="material-icons left">file_upload</i>
+              <span>Upload Files</span>
+              <input type="file" multiple />
+            </div>
+            <div className="file-path-wrapper">
+              <input className="file-path" type="text" placeholder="Upload one or more files" />
+            </div>
           </div>
         </div>
+
 
          </div>
 
