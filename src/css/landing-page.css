@@ -47,9 +47,10 @@ nav .brand-logo {
 /*About US*/
 
 .about-us {
-  width:80%;
   padding-top: 2em;
-  margin-bottom: 0
+  margin-bottom: 0;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .about-us-header {
@@ -63,6 +64,15 @@ nav .brand-logo {
 }
 
 /*Footer*/
+@media only screen and (max-width: 992px){
+  .about-us-footer-main{
+    text-align: center;
+  }
+  .col.l4.offset-l2.s12.about-us-footer-sign-in{
+    text-align: center;
+  }
+}
+
 footer.page-footer {
   padding: 0;
   margin: 0;
@@ -72,6 +82,15 @@ footer.page-footer {
 
 footer.page-footer a{
   color: #ffffff;
+}
+
+.about-us-footer-sign-in{
+  text-align: right;
+}
+
+.about-us-footer-main{
+  margin-left: 8% !important;
+  margin-right: 8% !important;
 }
 
 /*BUTTONS */
