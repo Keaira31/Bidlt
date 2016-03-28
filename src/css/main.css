@@ -85,3 +85,11 @@ border: 1px solid #d0d0d0;
 .footer-admin{
   margin:0 2.3em;
 }
+
+.row.proximity-slider {
+  margin-bottom: 0;
+}
+
+.contact-link{
+  padding: 0 1em;
+}

@@ -34,14 +34,14 @@ var TenderModal = React.createClass({
                 <div className="row">
                   <div className="input-field col s12 l6 left-align">
                     <input placeholder="2" type="number" ></input>
-                      <label>Workers Required</label>
+                      <label className="active">Workers Required</label>
                   </div>
                 </div>
 
                 <div className="row">
                   <div className="input-field col s6 l3 left-align">
                     <input placeholder="Days"  type="text" ></input>
-                      <label>Time Needed</label>
+                      <label className="active">Time Needed</label>
                   </div>
                   <div className="input-field col s6 l3 left-align">
                     <input placeholder="Hours"  type="text" ></input>
@@ -51,14 +51,14 @@ var TenderModal = React.createClass({
                 <div className="row">
                   <div className="input-field col s12 l6 left-align">
                     <textarea  className="materialize-textarea"></textarea>
-                    <label for="textarea1">Questions & Comments</label>
+                    <label className="active" for="textarea1">Questions & Comments</label>
                   </div>
                 </div>
 
                 <div className="row">
                   <div className="input-field col s12 l6 left-align">
                     <input placeholder="£20,000" type="text" ></input>
-                      <label>Cost To Build</label>
+                      <label className="active">Cost To Build</label>
                   </div>
                 </div>
 

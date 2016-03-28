@@ -3,6 +3,11 @@ body {
 }
 
 
+@media only screen and (max-width: 992px){
+  .main-padding {
+    padding-left: 0px !important;
+  }
+}
 
 
 .splash {
