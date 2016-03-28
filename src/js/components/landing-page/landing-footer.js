@@ -28,7 +28,13 @@ var LandingFooter = React.createClass({
           <div className="footer-copyright">
             <div className="container">
             © 2016 Copyright of BILDT UK
-            <a className="right" href="#!">CONTACT US</a>
+            <a className="right contact-link" href="tel:07746811574">
+              Call Us
+            </a>
+            <a className="right contact-link" href='mailto:hello@bidlt.com' >
+              Email Us
+            </a>
+
             </div>
           </div>
         </footer>
