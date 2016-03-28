@@ -6,6 +6,18 @@ var DatePicker = require('material-ui/lib/date-picker/date-picker');
 var Slider = require('material-ui/lib/slider');
 import ThemeManager from 'material-ui/lib/styles/theme-manager';
 import MyRawTheme from './custom-theme.js';
+import areIntlLocalesSupported from 'intl-locales-supported';
+
+let DateTimeFormat;
+
+if (areIntlLocalesSupported('en-GB')) {
+  DateTimeFormat = global.Intl.DateTimeFormat;
+} else {
+  const IntlPolyfill = require('intl');
+  require('intl/locale-data/jsonp/en-GB');
+
+  DateTimeFormat = IntlPolyfill.DateTimeFormat;
+}
 
 
 
@@ -91,7 +103,15 @@ var RequestWork = React.createClass({
         <label>Required Start Date</label>
         <div className="row">
           <div className="col s12 l6">
-            <DatePicker hintText="Date" locale='uk' />
+            <DatePicker
+              hintText="Date"
+              locale='en-GB'
+              formatDate={new DateTimeFormat('en-GB', {
+                day: 'numeric',
+                  month: 'long',
+                  year: 'numeric',
+                }).format}
+              DateTimeFormat={DateTimeFormat} />
           </div>
         </div>
 
@@ -100,14 +120,30 @@ var RequestWork = React.createClass({
         <label>Site Viewing Availability From</label>
         <div className="row">
           <div className="col s12 l2">
-            <DatePicker hintText="Date" locale='uk' />
+            <DatePicker
+              hintText="Date"
+              locale='en-GB'
+              formatDate={new DateTimeFormat('en-GB', {
+                day: 'numeric',
+                  month: 'long',
+                  year: 'numeric',
+                }).format}
+              DateTimeFormat={DateTimeFormat} />
           </div>
         </div>
 
         <label>Site Viewing Availability To</label>
         <div className="row">
           <div className="col s12 l2">
-            <DatePicker hintText="Date" locale='uk' />
+            <DatePicker
+              hintText="Date"
+              locale='en-GB'
+              formatDate={new DateTimeFormat('en-GB', {
+                day: 'numeric',
+                  month: 'long',
+                  year: 'numeric',
+                }).format}
+              DateTimeFormat={DateTimeFormat} />
           </div>
         </div>
 
