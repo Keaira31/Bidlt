@@ -1,5 +1,6 @@
 module.exports = [{
-  id: 'MANCHESTER 1',
+  id: 1,
+  location: 'MANCHESTER',
   title: "Ceiling Light Alterations for Ground Floor",
   trade: "Electrician",
   jobType: 'Customer’',
