@@ -2,7 +2,7 @@ var React = require('react');
 var SelectField = require('material-ui/lib/select-field');
 var MenuItem = require('material-ui/lib/menus/menu-item');
 var Slider = require('material-ui/lib/slider');
-var JobData = require('./job-data.js');
+var JobData = require('./job-data-2.js');
 var Link = require('react-router').Link;
 import ThemeManager from 'material-ui/lib/styles/theme-manager';
 import MyRawTheme from '../global/custom-theme.js';
@@ -106,13 +106,41 @@ var JobSearch = React.createClass({
           <div className="col s12 l6">
             <SelectField value={this.state.trade} onChange={this.getValue}>
               <MenuItem value={'All'} primaryText="All"/>
-                <MenuItem value={'Carpenter'}  primaryText="Carpenter"/>
-              <MenuItem value={'Plumber'}  primaryText="Plumber"/>
-                <MenuItem value={'Electrician'} disabled primaryText="Electrician"/>
-              <MenuItem value={'Ground Work'} disabled primaryText="Ground Work"/>
-              <MenuItem value={'Plasterer'} disabled primaryText="Plasterer"/>
-              <MenuItem value={"Painter"} disabled primaryText= "Painter"/>
-              <MenuItem value={"Brick Layer"} disabled primaryText= "Brick Layer"/>
+              <MenuItem value={'Ariel/Communications Specialist'}  primaryText="Ariel/Communications Specialist"/>
+              <MenuItem value={'Architects'}  primaryText="Architects"/>
+              <MenuItem value={'Bathroom Specialist'}  primaryText="Bathroom Specialist"/>
+              <MenuItem value={'Blacksmith/Metalworking Specialist'}  primaryText="Blacksmith/Metalworking Specialist"/>
+              <MenuItem value={'Bricklayer'}  primaryText="Bricklayer"/>
+              <MenuItem value={'Builder'}  primaryText="Builder"/>
+              <MenuItem value={'Carpenter'}  primaryText="Carpenter"/>
+              <MenuItem value={'Cleaner'}  primaryText="Cleaner"/>
+              <MenuItem value={'Drainage Engineer'}  primaryText="Drainage Engineer"/>
+              <MenuItem value={'Driveway Specialist'}  primaryText="Driveway Specialist"/>
+              <MenuItem value={'Electrician'} primaryText="Electrician"/>
+              <MenuItem value={'Flooring Specialist'} primaryText="Flooring Specialist"/>
+              <MenuItem value={'Gardener'} primaryText="Gardener"/>
+              <MenuItem value={'Garden Designer'} primaryText="Garden Designer"/>
+              <MenuItem value={'Ground Worker'} primaryText="Ground Worker"/>
+              <MenuItem value={'Handyman'} primaryText="Handyman"/>
+              <MenuItem value={'Heating Engineer'} primaryText="Heating Engineer"/>
+              <MenuItem value={'Joiner'} primaryText="Joiner"/>
+              <MenuItem value={'Kitchen Specialist'} primaryText="Kitchen Specialist"/>
+              <MenuItem value={'Locksmith'} primaryText="Locksmith"/>
+              <MenuItem value={'Loft Conversion Specialist'} primaryText="Loft Conversion Specialist"/>
+              <MenuItem value={'Painter/Decorator'} primaryText="Painter/Decorator"/>
+              <MenuItem value={'Pest Control'} primaryText="Pest Control"/>
+              <MenuItem value={'Plasterer'} primaryText="Plasterer"/>
+              <MenuItem value={'Plumber'} primaryText="Plumber"/>
+              <MenuItem value={'Roofer'} primaryText="Roofer"/>
+              <MenuItem value={'Security Specialist'} primaryText="Security Specialist"/>
+              <MenuItem value={'Stoneworker/Stonemason'} primaryText="Stoneworker/Stonemason"/>
+              <MenuItem value={'Swimming Pool Specialist'} primaryText="Swimming Pool Specialist"/>
+              <MenuItem value={'Tiler'} primaryText="Tiler"/>
+              <MenuItem value={'Traditional Crafstmen'} primaryText="Traditional Crafstmen"/>
+              <MenuItem value={'Tree Surgeon'} primaryText="Tree Surgeon"/>
+              <MenuItem value={'Window & Conservatory Specialist'} primaryText="Window & Conservatory Specialist"/>
+              <MenuItem value={''} disabled primaryText=""/>
+              <MenuItem value={"Independent Craftsment for Tailored Projects"} primaryText= "Independent Craftsment for Tailored Projects"/>
             </SelectField>
           </div>
         </div>
@@ -123,7 +151,9 @@ var JobSearch = React.createClass({
               <MenuItem value={'All'} primaryText="All"/>
               <MenuItem value={'Self Build'} primaryText="Self Build"/>
               <MenuItem value={'Small Project'} primaryText="Small Project"/>
+              <MenuItem value={'Customer'} primaryText="Customer"/>
               <MenuItem value={'TLC'} disabled primaryText="TLC"/>
+
             </SelectField>
 
           </div>

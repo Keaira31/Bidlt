@@ -1,5 +1,5 @@
 var React = require('react');
-var JobData = require('./job-data.js');
+var JobData = require('./job-data-2.js');
 var Gallery = require('react-image-gallery');
 var TenderGoogleMap = require('./tender-google-map.js');
 var TenderModal = require('./job-tender-modal.js');

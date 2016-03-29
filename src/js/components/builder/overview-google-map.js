@@ -2,6 +2,7 @@ var React = require('react');
 var GoogleMapLoader = require('react-google-maps').GoogleMapLoader;
 var GoogleMap = require('react-google-maps').GoogleMap;
 var Marker = require('react-google-maps').Marker;
+var url = require("file?name=picture.png!./spanner1.png");
 
 
 var Markers = {
@@ -63,7 +64,7 @@ var OverviewGoogleMap = React.createClass({
                  <GoogleMap ref={map => ("GoogleMap", map)} defaultZoom={11} options={{ scrollwheel: false}} defaultCenter={{lat:51.529571, lng: -0.042356}}  >
                    {Markers.markers.map((marker, index) => {
                      return (
-                       <Marker {...marker} options={{icon:'../../../../public/assets/icons/build.png'}} 	 />
+                       <Marker {...marker} options={{icon:url}} 	 />
                      );
                    })}
                  </GoogleMap>
