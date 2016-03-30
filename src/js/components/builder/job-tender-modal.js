@@ -26,7 +26,7 @@ var TenderModal = React.createClass({
             <div className="right-align">
               <a className="modal-action modal-close btn-flat center waves-effect waves-light"><i className="material-icons right">close</i>Close</a>
             </div>
-            <h4 className="submit-tender-header center">Submit Tender</h4>
+            <h4 className="submit-tender-header center">Estimate</h4>
 
 
               <div className="row z-depth-1">
@@ -72,7 +72,7 @@ var TenderModal = React.createClass({
             <div className="row">
                 <div className="right-align">
                   <a className="darkest-color btn waves-effect waves-light modal-close modal-action" >
-                    Submit Tender
+                    Place an Estimate
                   <i className="material-icons right">send</i>
                   </a>
               </div>
