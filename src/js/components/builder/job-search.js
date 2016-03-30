@@ -104,7 +104,7 @@ var JobSearch = React.createClass({
         <label>Your Trade</label>
         <div className="row">
           <div className="col s12 l6">
-            <SelectField value={this.state.trade} onChange={this.getValue} style={{width: '40%'}}>
+            <SelectField value={this.state.trade} onChange={this.getValue} style={{width: '60%'}}>
               <MenuItem value={'All'} primaryText="All"/>
               <MenuItem value={'Ariel/Communications Specialist'}  primaryText="Ariel/Communications Specialist"/>
               <MenuItem value={'Architects'}  primaryText="Architects"/>
@@ -147,7 +147,7 @@ var JobSearch = React.createClass({
         <label>Job Type</label>
         <div className="row">
           <div className="col s12 l6">
-            <SelectField value={this.state.jobType} onChange={this.getJobType} style={{width: '40%'}}>
+            <SelectField value={this.state.jobType} onChange={this.getJobType} style={{width: '60%'}}>
               <MenuItem value={'All'} primaryText="All"/>
               <MenuItem value={'Self Build'} primaryText="Self Build"/>
               <MenuItem value={'Small Project'} primaryText="Small Project"/>
