@@ -83,7 +83,7 @@ var JobTender = React.createClass({
         <div className="row">
           <div className="col s12 l12 right-align">
             <button className="darkest-color btn-large waves-effect waves-light modal-trigger" data-target="submit-tender">
-              Start Tender Process
+              Start Estimate Process
             <i className="material-icons right">send</i>
             </button>
           </div>
